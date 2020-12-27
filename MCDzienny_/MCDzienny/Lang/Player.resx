@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CommandPlayerNonexistent" xml:space="preserve">
+    <value>Player "{0}" doesn't exist!</value>
+  </data>
+  <data name="WelcomeFirstVisit" xml:space="preserve">
+    <value>Welcome {0}! This is your first visit.</value>
+  </data>
+  <data name="WelcomeLowLag" xml:space="preserve">
+    <value>Lowlag mode is currently &amp;aON.</value>
+  </data>
+  <data name="WarningBreakingBlocks" xml:space="preserve">
+    <value>{0} is breaking something</value>
+  </data>
+  <data name="CommandJailWarning" xml:space="preserve">
+    <value>You cannot use any commands while jailed.</value>
+  </data>
+  <data name="ChatNoMessageEntered" xml:space="preserve">
+    <value>No message entered</value>
+  </data>
+  <data name="CommandUsedOneself" xml:space="preserve">
+    <value>Trying to talk to yourself, huh?</value>
+  </data>
+  <data name="WarningCantDisturbBlock" xml:space="preserve">
+    <value>Block is active, you cant disturb it!</value>
+  </data>
+  <data name="ErrorOccured" xml:space="preserve">
+    <value>An error occurred: {0}</value>
+  </data>
+  <data name="WelcomeAwards" xml:space="preserve">
+    <value>You have {0} awards.</value>
+  </data>
+  <data name="WarningNoMessageStored" xml:space="preserve">
+    <value>No message was stored.</value>
+  </data>
+  <data name="CommandFailed" xml:space="preserve">
+    <value>Command failed.</value>
+  </data>
+  <data name="AfkMessage" xml:space="preserve">
+    <value>auto: Not moved for {0} minutes</value>
+  </data>
+  <data name="KickIllegalName" xml:space="preserve">
+    <value>Illegal name!</value>
+  </data>
+  <data name="KickLoggedAsYou" xml:space="preserve">
+    <value>Someone logged in as you!</value>
+  </data>
+  <data name="ChatAppended" xml:space="preserve">
+    <value>Message appended!</value>
+  </data>
+  <data name="CommandNoBind" xml:space="preserve">
+    <value>No CMD is stored on /{0}</value>
+  </data>
+  <data name="KickDisconnected" xml:space="preserve">
+    <value>Disconnected.</value>
+  </data>
+  <data name="CommandNoEntered" xml:space="preserve">
+    <value>No command entered.</value>
+  </data>
+  <data name="WarningBuiltTooLow" xml:space="preserve">
+    <value>You're not allowed to build this far down!</value>
+  </data>
+  <data name="WarningBuiltTooFar" xml:space="preserve">
+    <value>You can't build that far away.</value>
+  </data>
+  <data name="WelcomeMoney" xml:space="preserve">
+    <value>You have&amp;a {0}</value>
+  </data>
+  <data name="WelcomeInbox" xml:space="preserve">
+    <value>&amp;cYou have&amp;f {0} &amp;cmessages in /inbox</value>
+  </data>
+  <data name="KickHacks" xml:space="preserve">
+    <value>Turn hacks off!</value>
+  </data>
+  <data name="KickAlreadyLogged" xml:space="preserve">
+    <value>Already logged in!</value>
+  </data>
+  <data name="WarningPortalDestinationUnloaded" xml:space="preserve">
+    <value>The map the portal goes to isn't loaded.</value>
+  </data>
+  <data name="VoteDecisionNo" xml:space="preserve">
+    <value>no</value>
+  </data>
+  <data name="LatelyKnownAs" xml:space="preserve">
+    <value>Lately known as:</value>
+  </data>
+  <data name="AfkNoLonger" xml:space="preserve">
+    <value>-{0}- is no longer AFK</value>
+  </data>
+  <data name="GlobalChatWorldTag" xml:space="preserve">
+    <value>&lt;World&gt;</value>
+  </data>
+  <data name="WelcomePlayersCount" xml:space="preserve">
+    <value>There are currently&amp;a {0} players online.</value>
+  </data>
+  <data name="WelcomePlayerCount" xml:space="preserve">
+    <value>There is currently&amp;a {0} player online.</value>
+  </data>
+  <data name="CommandUnknown" xml:space="preserve">
+    <value>Unknown command "{0}"!</value>
+  </data>
+  <data name="KickLoginFailed" xml:space="preserve">
+    <value>Login failed! Try again.</value>
+  </data>
+  <data name="CommandNotAllowedToUse" xml:space="preserve">
+    <value>You are not allowed to use "{0}"!</value>
+  </data>
+  <data name="DiedTimesGlobalMessage" xml:space="preserve">
+    <value>{0} has died&amp;3 {1} times</value>
+  </data>
+  <data name="KickUnknownAction" xml:space="preserve">
+    <value>Unknown block action!</value>
+  </data>
+  <data name="CommandNoUseWhenMuted" xml:space="preserve">
+    <value>Cannot use /{0} while muted or jokered.</value>
+  </data>
+  <data name="WarningDisallowedBlockType" xml:space="preserve">
+    <value>You can't place this block type!</value>
+  </data>
+  <data name="VoteDecisionNoShortcut" xml:space="preserve">
+    <value>n</value>
+  </data>
+  <data name="ErrorCommand" xml:space="preserve">
+    <value>An error occured when using the command!</value>
+  </data>
+  <data name="ChatIllegalCharacter" xml:space="preserve">
+    <value>Illegal character in chat message!</value>
+  </data>
+  <data name="VoteDecisionYes" xml:space="preserve">
+    <value>yes</value>
+  </data>
+  <data name="WelcomeAnotherVisit" xml:space="preserve">
+    <value>Welcome back! {0}! You've been here {1} times!</value>
+  </data>
+  <data name="WarningPortalHasNoExit" xml:space="preserve">
+    <value>Portal has no exit.</value>
+  </data>
+  <data name="GlobalMessageKicked" xml:space="preserve">
+    <value>&amp;c- {0} kicked ({1}).</value>
+  </data>
+  <data name="KickAfk" xml:space="preserve">
+    <value>You were kicked for being afk for over {0} min.</value>
+  </data>
+  <data name="ChatTempMutedTime" xml:space="preserve">
+    <value>You are muted for {0} seconds.</value>
+  </data>
+  <data name="GlobalMessageLeftGame" xml:space="preserve">
+    <value>{0} left the game.</value>
+  </data>
+  <data name="KickServerFull" xml:space="preserve">
+    <value>Server full!</value>
+  </data>
+  <data name="WarningCantBuildHere" xml:space="preserve">
+    <value>Cannot build here!</value>
+  </data>
+  <data name="ChatModeration" xml:space="preserve">
+    <value>Chat moderation is on, you cannot speak.</value>
+  </data>
+  <data name="KickWrongVersion" xml:space="preserve">
+    <value>Wrong version!</value>
+  </data>
+  <data name="WelcomeModified" xml:space="preserve">
+    <value>You have modified&amp;a {0} blocks!</value>
+  </data>
+  <data name="WarningTooHighPillar" xml:space="preserve">
+    <value>You are not allowed to build pillars that are so high.</value>
+  </data>
+  <data name="KickTempBan" xml:space="preserve">
+    <value>You're still banned (temporary ban)!</value>
+  </data>
+  <data name="IrcMessageKicked" xml:space="preserve">
+    <value>{0} kicked ({1}).</value>
+  </data>
+  <data name="VoteDecisionYesShortcut" xml:space="preserve">
+    <value>y</value>
+  </data>
+  <data name="ChatToOps" xml:space="preserve">
+    <value>To Ops &amp;f-{0}&amp;f- {1}</value>
+  </data>
+  <data name="ChatMuted" xml:space="preserve">
+    <value>You are muted.</value>
+  </data>
+  <data name="VoteThanks" xml:space="preserve">
+    <value>Thanks for the vote!</value>
+  </data>
+  <data name="JoinGlobalMessage" xml:space="preserve">
+    <value>{0} joined the game.</value>
+  </data>
+</root>

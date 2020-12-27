@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AwardMessage5" xml:space="preserve">
+    <value>The player didn't have the award you tried to take</value>
+  </data>
+  <data name="AwardMessage4" xml:space="preserve">
+    <value>{0} had their%b {1} award removed.</value>
+  </data>
+  <data name="AwardMessage3" xml:space="preserve">
+    <value>The player already has that award!</value>
+  </data>
+  <data name="AwardMessage2" xml:space="preserve">
+    <value>{0} was awarded:%b {1}</value>
+  </data>
+  <data name="AwardMessage1" xml:space="preserve">
+    <value>Use /awards for a list of awards</value>
+  </data>
+  <data name="BotSetParameter10" xml:space="preserve">
+    <value>jump</value>
+  </data>
+  <data name="BotSetParameter11" xml:space="preserve">
+    <value>remove</value>
+  </data>
+  <data name="BlockSetHelp2" xml:space="preserve">
+    <value>Available ranks: {0}</value>
+  </data>
+  <data name="BlockSetHelp1" xml:space="preserve">
+    <value>Only blocks you can use can be modified</value>
+  </data>
+  <data name="AliveHelp" xml:space="preserve">
+    <value>/alive - Displays list of players that are still alive.</value>
+  </data>
+  <data name="BotsName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AliveName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BotsHelp" xml:space="preserve">
+    <value>/bots - Shows a list of bots, their AIs and levels</value>
+  </data>
+  <data name="BanHelp" xml:space="preserve">
+    <value>/ban &lt;player&gt; - Bans a player without kicking him.</value>
+  </data>
+  <data name="BanName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AwardModParameter1" xml:space="preserve">
+    <value>del</value>
+  </data>
+  <data name="BlocksMessage4" xml:space="preserve">
+    <value>Incorrect syntax</value>
+  </data>
+  <data name="BlocksMessage5" xml:space="preserve">
+    <value>Number must be between 0 and 4</value>
+  </data>
+  <data name="BlocksMessage6" xml:space="preserve">
+    <value>Blocks between {0} and {1}</value>
+  </data>
+  <data name="BlocksMessage7" xml:space="preserve">
+    <value>Blocks which look like \"{0}\":</value>
+  </data>
+  <data name="BlocksMessage1" xml:space="preserve">
+    <value>&amp;d/blocks all &lt;0/1/2/3/4&gt; {0}will show the rest.</value>
+  </data>
+  <data name="BlocksMessage2" xml:space="preserve">
+    <value>Complex blocks: </value>
+  </data>
+  <data name="BlocksMessage3" xml:space="preserve">
+    <value>Use &amp;d/blocks all &lt;0/1/2/3/4&gt; {0}for a readable list.</value>
+  </data>
+  <data name="BlocksMessage8" xml:space="preserve">
+    <value>No Complex Blocks look like \"{0}\</value>
+  </data>
+  <data name="BlocksMessage9" xml:space="preserve">
+    <value>&amp;bComplex information for \"{0}\":</value>
+  </data>
+  <data name="BotAIParameter1" xml:space="preserve">
+    <value>Lang.Command.BotAIParameter</value>
+  </data>
+  <data name="BotAIParameter3" xml:space="preserve">
+    <value>del</value>
+  </data>
+  <data name="BotAIParameter2" xml:space="preserve">
+    <value>add</value>
+  </data>
+  <data name="BanHelp1" xml:space="preserve">
+    <value>Add # before name to stealth ban.</value>
+  </data>
+  <data name="BanHelp2" xml:space="preserve">
+    <value>Add @ before name to total ban.</value>
+  </data>
+  <data name="BuyName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BuyHelp" xml:space="preserve">
+    <value>/buy - lets you buy stuff, e.g. /buy life, /buy water</value>
+  </data>
+  <data name="BotSetParameter" xml:space="preserve">
+    <value>hunt</value>
+  </data>
+  <data name="AwardModHelp2" xml:space="preserve">
+    <value>&amp;b/awardmod add Bomb joy : Bomb lots of people {0} is an example</value>
+  </data>
+  <data name="AwardModHelp1" xml:space="preserve">
+    <value>Adds or deletes a reward with the name [award name]</value>
+  </data>
+  <data name="CmdAbortHelp" xml:space="preserve">
+    <value>/abort - Cancels an action.</value>
+  </data>
+  <data name="CmdAbortName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AfkMessage" xml:space="preserve">
+    <value>-{0}- is AFK {1}</value>
+  </data>
+  <data name="BotAIHelp5" xml:space="preserve">
+    <value>linkscript takes a script name as parameter</value>
+  </data>
+  <data name="BotAIHelp4" xml:space="preserve">
+    <value>speed sets a percentage of normal speed</value>
+  </data>
+  <data name="BotAIHelp1" xml:space="preserve">
+    <value>Extras: walk, teleport, wait, nod, speed, spin, reset, remove, reverse, linkscript, jump</value>
+  </data>
+  <data name="BotAIHelp3" xml:space="preserve">
+    <value>nod and spin can also take a 'third' speed parameter</value>
+  </data>
+  <data name="BotAIHelp2" xml:space="preserve">
+    <value>wait, nod and spin can have an extra '0.1 seconds' parameter</value>
+  </data>
+  <data name="AwardModName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AwardModHelp" xml:space="preserve">
+    <value>/awardmod &lt;add/del&gt; [award name] : [description]</value>
+  </data>
+  <data name="BestScoresName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BestScoresHelp" xml:space="preserve">
+    <value>/topten - Displays names of ten best players.</value>
+  </data>
+  <data name="CmdAboutHelp" xml:space="preserve">
+    <value>/about - Displays information about a block.</value>
+  </data>
+  <data name="BotRemoveHelp" xml:space="preserve">
+    <value>/botremove &lt;name&gt; - Remove a bot on the same level as you</value>
+  </data>
+  <data name="BotRemoveName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePlayerExpMessage" xml:space="preserve">
+    <value>There has to be 2 arguments!</value>
+  </data>
+  <data name="AwardMessage" xml:space="preserve">
+    <value>The award you entered doesn't exist</value>
+  </data>
+  <data name="BlockSetName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BlockSetHelp" xml:space="preserve">
+    <value>/blockset [block] [rank] - Changes [block] rank to [rank]</value>
+  </data>
+  <data name="BindHelp1" xml:space="preserve">
+    <value>/bind clear - Clears all binds.</value>
+  </data>
+  <data name="BotSummonMessage1" xml:space="preserve">
+    <value>{0} is in a different level.</value>
+  </data>
+  <data name="BotAIMessage" xml:space="preserve">
+    <value>Invalid AI name!</value>
+  </data>
+  <data name="BlockSetMessage4" xml:space="preserve">
+    <value>&amp;d{0}'s permission was changed to {1}</value>
+  </data>
+  <data name="BlockSetMessage1" xml:space="preserve">
+    <value>Could not find rank specified</value>
+  </data>
+  <data name="BlockSetMessage3" xml:space="preserve">
+    <value>Cannot modify a block set for a higher rank</value>
+  </data>
+  <data name="BlockSetMessage2" xml:space="preserve">
+    <value>Cannot set to a rank higher than yourself.</value>
+  </data>
+  <data name="BanIPHelp" xml:space="preserve">
+    <value>/banip &lt;ip/name&gt; - Bans an ip. Also accepts a player name when you use @ before the name.</value>
+  </data>
+  <data name="BanIPName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BlocksMessage" xml:space="preserve">
+    <value>Basic blocks: </value>
+  </data>
+  <data name="AwardModMessage1" xml:space="preserve">
+    <value>This award already exists!</value>
+  </data>
+  <data name="AwardModMessage3" xml:space="preserve">
+    <value>This award doesn't exists!</value>
+  </data>
+  <data name="AwardModMessage2" xml:space="preserve">
+    <value>Award added:&amp;6 {0} : {1}</value>
+  </data>
+  <data name="AwardModMessage4" xml:space="preserve">
+    <value>Award removed:&amp;6 {0}</value>
+  </data>
+  <data name="AboutNoModification" xml:space="preserve">
+    <value>This block has not been modified since the map was cleared.</value>
+  </data>
+  <data name="BotSummonName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BotSummonHelp" xml:space="preserve">
+    <value>/botsummon &lt;name&gt; - Summons a bot to your position.</value>
+  </data>
+  <data name="BanIPMessage" xml:space="preserve">
+    <value>Unable to find an IP address for that user.</value>
+  </data>
+  <data name="BlocksName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BlocksHelp" xml:space="preserve">
+    <value>/blocks - Lists all basic blocks</value>
+  </data>
+  <data name="BindName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BindHelp" xml:space="preserve">
+    <value>/bind &lt;block&gt; [type] - Replaces block with type.</value>
+  </data>
+  <data name="BotSummonMessage" xml:space="preserve">
+    <value>There is no bot {0}!</value>
+  </data>
+  <data name="BlocksMessage15" xml:space="preserve">
+    <value>Block is unaffected by explosions</value>
+  </data>
+  <data name="BlocksMessage14" xml:space="preserve">
+    <value>The block's physics will auto-start</value>
+  </data>
+  <data name="BlocksMessage17" xml:space="preserve">
+    <value>Block can be walked through</value>
+  </data>
+  <data name="BlocksMessage16" xml:space="preserve">
+    <value>Anybody can activate the block</value>
+  </data>
+  <data name="BlocksMessage11" xml:space="preserve">
+    <value>Block will allow light through</value>
+  </data>
+  <data name="BlocksMessage10" xml:space="preserve">
+    <value>&amp;cBlock will appear as a \"{0}\" block</value>
+  </data>
+  <data name="BlocksMessage13" xml:space="preserve">
+    <value>Block will not effect physics in any way</value>
+  </data>
+  <data name="BlocksMessage12" xml:space="preserve">
+    <value>Block effects physics in some way</value>
+  </data>
+  <data name="BlocksMessage19" xml:space="preserve">
+    <value>Block is an ordinary door</value>
+  </data>
+  <data name="BlocksMessage18" xml:space="preserve">
+    <value>Walking through block will kill you</value>
+  </data>
+  <data name="BlocksMessage30" xml:space="preserve">
+    <value>Unable to find block or rank</value>
+  </data>
+  <data name="BlocksMessage26" xml:space="preserve">
+    <value>Could not find block specified</value>
+  </data>
+  <data name="BlocksMessage27" xml:space="preserve">
+    <value>No blocks were of type \"{0}\</value>
+  </data>
+  <data name="BlocksMessage24" xml:space="preserve">
+    <value>No blocks are specific to this rank</value>
+  </data>
+  <data name="BlocksMessage25" xml:space="preserve">
+    <value>Blocks in this map: {0}</value>
+  </data>
+  <data name="BlocksMessage22" xml:space="preserve">
+    <value>Block can be activated by walking through it</value>
+  </data>
+  <data name="BlocksMessage23" xml:space="preserve">
+    <value>Blocks which {0} can place: </value>
+  </data>
+  <data name="BlocksMessage20" xml:space="preserve">
+    <value>Block is a tdoor, which allows other blocks through when open</value>
+  </data>
+  <data name="BlocksMessage21" xml:space="preserve">
+    <value>Block is an odoor, which toggles (GLITCHY)</value>
+  </data>
+  <data name="BlocksMessage28" xml:space="preserve">
+    <value>1 block was of type \"{0}\</value>
+  </data>
+  <data name="BlocksMessage29" xml:space="preserve">
+    <value>{0} blocks were of type \"{1}\</value>
+  </data>
+  <data name="BotSetHelp1" xml:space="preserve">
+    <value>Special AI scripts: Kill and Hunt</value>
+  </data>
+  <data name="AliveMessage" xml:space="preserve">
+    <value>The following players are still alive:</value>
+  </data>
+  <data name="CmdAboutBlock" xml:space="preserve">
+    <value>Block ({0},{1},{2}): </value>
+  </data>
+  <data name="BanMessage" xml:space="preserve">
+    <value>{0}\".", "Invalid name \</value>
+  </data>
+  <data name="AwardModParameter" xml:space="preserve">
+    <value>add</value>
+  </data>
+  <data name="BotRemoveMessage1" xml:space="preserve">
+    <value>{0} is in a different level.</value>
+  </data>
+  <data name="BotRemoveMessage2" xml:space="preserve">
+    <value>Removed bot.</value>
+  </data>
+  <data name="BanMessage3" xml:space="preserve">
+    <value>{0} &amp;f(offline){1} is now &amp;8banned{1}!</value>
+  </data>
+  <data name="BanMessage2" xml:space="preserve">
+    <value>{0} is already banned.</value>
+  </data>
+  <data name="BanMessage1" xml:space="preserve">
+    <value>You can't ban a {0}!</value>
+  </data>
+  <data name="BanMessage6" xml:space="preserve">
+    <value>{0} was banned.</value>
+  </data>
+  <data name="BanMessage5" xml:space="preserve">
+    <value>{0} is now &amp;8banned{1}!</value>
+  </data>
+  <data name="BanMessage4" xml:space="preserve">
+    <value>{0} is now STEALTH &amp;8banned{1}!</value>
+  </data>
+  <data name="CmdAboutInvalidBlock" xml:space="preserve">
+    <value>Invalid Block({0},{1},{2})!</value>
+  </data>
+  <data name="BindMessage9" xml:space="preserve">
+    <value>{0} isn't bound.</value>
+  </data>
+  <data name="BindMessage8" xml:space="preserve">
+    <value>This block cannot be bound</value>
+  </data>
+  <data name="BindMessage7" xml:space="preserve">
+    <value>{0} bound to {1}.</value>
+  </data>
+  <data name="BindMessage6" xml:space="preserve">
+    <value>{0} is already bound to {1}.</value>
+  </data>
+  <data name="BindMessage5" xml:space="preserve">
+    <value>Cannot bind anything to this block.</value>
+  </data>
+  <data name="BindMessage4" xml:space="preserve">
+    <value>You can't bind {0}.</value>
+  </data>
+  <data name="BindMessage3" xml:space="preserve">
+    <value>{0} isn't a special block.</value>
+  </data>
+  <data name="BindMessage2" xml:space="preserve">
+    <value>Lang.Command.BindMessage1</value>
+  </data>
+  <data name="BindMessage1" xml:space="preserve">
+    <value>There is no block \"{0}\".</value>
+  </data>
+  <data name="BestScoresMessage" xml:space="preserve">
+    <value>Top ten round scores:</value>
+  </data>
+  <data name="AboutName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BindParameter" xml:space="preserve">
+    <value>clear</value>
+  </data>
+  <data name="AfkHelp" xml:space="preserve">
+    <value>/afk &lt;reason&gt; - mark yourself as AFK. Use again to mark yourself as back</value>
+  </data>
+  <data name="AfkName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BotSetName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BotSetHelp" xml:space="preserve">
+    <value>/botset &lt;bot&gt; &lt;AI script&gt; - Makes &lt;bot&gt; do &lt;AI script&gt;</value>
+  </data>
+  <data name="CmdAboutCreatedBy" xml:space="preserve">
+    <value>&amp;3Created by {0}, using%3 {1}</value>
+  </data>
+  <data name="BotAIMessage9" xml:space="preserve">
+    <value>Linkscript requires a script as a parameter</value>
+  </data>
+  <data name="BotAIMessage8" xml:space="preserve">
+    <value>An error occurred when accessing the files. You may need to delete it.</value>
+  </data>
+  <data name="BotAIMessage7" xml:space="preserve">
+    <value>Appended to bot AI: &amp;b{0}</value>
+  </data>
+  <data name="BotAIMessage6" xml:space="preserve">
+    <value>File found is out-of-date. Overwriting</value>
+  </data>
+  <data name="BotAIMessage5" xml:space="preserve">
+    <value>Created new bot AI: &amp;b{0}</value>
+  </data>
+  <data name="BotAIMessage4" xml:space="preserve">
+    <value>Could not find specified AI.</value>
+  </data>
+  <data name="BotAIMessage3" xml:space="preserve">
+    <value>Deleted &amp;b{0}</value>
+  </data>
+  <data name="BotAIMessage2" xml:space="preserve">
+    <value>Deleted the last waypoint from {0}</value>
+  </data>
+  <data name="BotAIMessage1" xml:space="preserve">
+    <value>Reserved for special AI.</value>
+  </data>
+  <data name="AwardHelp1" xml:space="preserve">
+    <value>If no Give or Take is given, Give is used</value>
+  </data>
+  <data name="AwardHelp2" xml:space="preserve">
+    <value>[award] needs to be the full award's name. Not partial</value>
+  </data>
+  <data name="AwardModMessage" xml:space="preserve">
+    <value>&amp;cMissing a colon!</value>
+  </data>
+  <data name="AfkMessage2" xml:space="preserve">
+    <value>-{0}- is no longer AFK</value>
+  </data>
+  <data name="AfkMessage3" xml:space="preserve">
+    <value>{0} is no longer AFK</value>
+  </data>
+  <data name="AfkMessage1" xml:space="preserve">
+    <value>{0} is AFK {1}</value>
+  </data>
+  <data name="BuyParameter" xml:space="preserve">
+    <value>more</value>
+  </data>
+  <data name="BindMessage" xml:space="preserve">
+    <value>All bindings were unbound.</value>
+  </data>
+  <data name="BotSetMessage5" xml:space="preserve">
+    <value>Could not find specified AI.</value>
+  </data>
+  <data name="BotSetMessage4" xml:space="preserve">
+    <value>{0}'s kill instinct: {1}</value>
+  </data>
+  <data name="BotSetMessage7" xml:space="preserve">
+    <value>AI file corrupt.</value>
+  </data>
+  <data name="BotSetMessage6" xml:space="preserve">
+    <value>Invalid file version. Remake</value>
+  </data>
+  <data name="BotSetMessage1" xml:space="preserve">
+    <value>Could not find specified Bot</value>
+  </data>
+  <data name="BotSetMessage3" xml:space="preserve">
+    <value>Only an OP may toggle killer instinct.</value>
+  </data>
+  <data name="BotSetMessage2" xml:space="preserve">
+    <value>{0}'s hunt instinct: {1}</value>
+  </data>
+  <data name="BotSetMessage9" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="BotSetMessage8" xml:space="preserve">
+    <value>{0}'s AI is now set to {1}</value>
+  </data>
+  <data name="BotSetMessage" xml:space="preserve">
+    <value>{0}'s AI was turned off.</value>
+  </data>
+  <data name="BlocksHelp4" xml:space="preserve">
+    <value>/blocks &lt;rank&gt; - Lists all blocks &lt;rank&gt; can use</value>
+  </data>
+  <data name="BlocksHelp5" xml:space="preserve">
+    <value>/blocks count &lt;block&gt; - Finds total count for &lt;block&gt; in map</value>
+  </data>
+  <data name="BlocksHelp2" xml:space="preserve">
+    <value>/blocks [basic block] - Lists all blocks which look the same</value>
+  </data>
+  <data name="BlocksHelp3" xml:space="preserve">
+    <value>/blocks [complex block] - Lists specific information on block</value>
+  </data>
+  <data name="BlocksHelp1" xml:space="preserve">
+    <value>/blocks all - Lists all complex blocks</value>
+  </data>
+  <data name="BotsMessage" xml:space="preserve">
+    <value>&amp;1Bots: </value>
+  </data>
+  <data name="BotAIMessage10" xml:space="preserve">
+    <value>Could not find \"{0}\</value>
+  </data>
+  <data name="BotAIMessage11" xml:space="preserve">
+    <value>Invalid parameter</value>
+  </data>
+  <data name="CmdAboutPhysics" xml:space="preserve">
+    <value>Physics information:&amp;a {0}</value>
+  </data>
+  <data name="BindMessage10" xml:space="preserve">
+    <value>Unbound {0}.</value>
+  </data>
+  <data name="BestScoresMessage1" xml:space="preserve">
+    <value>%c{0}. {1} - best score: {2}</value>
+  </data>
+  <data name="AwardName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AwardHelp" xml:space="preserve">
+    <value>/award &lt;give/take&gt; [player] [award] - Gives [player] the [award]</value>
+  </data>
+  <data name="BlocksParameter1" xml:space="preserve">
+    <value>count</value>
+  </data>
+  <data name="BotRemoveParameter" xml:space="preserve">
+    <value>all</value>
+  </data>
+  <data name="BotRemoveMessage" xml:space="preserve">
+    <value>There is no bot {0}!</value>
+  </data>
+  <data name="CmdAbortMessage" xml:space="preserve">
+    <value>Every toggle or action was aborted.</value>
+  </data>
+  <data name="ChangePlayerExpMessage2" xml:space="preserve">
+    <value>Couldn't find the player.</value>
+  </data>
+  <data name="ChangePlayerExpMessage3" xml:space="preserve">
+    <value>Player experience has been changed by {0} exp points</value>
+  </data>
+  <data name="ChangePlayerExpMessage1" xml:space="preserve">
+    <value>Wrong number</value>
+  </data>
+  <data name="AboutDateOfModification" xml:space="preserve">
+    <value>Date and time modified:&amp;2 {0}</value>
+  </data>
+  <data name="ChangePlayerExpHelp" xml:space="preserve">
+    <value>/cpe - Admin super secret command.</value>
+  </data>
+  <data name="ChangePlayerExpName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BlocksParameter" xml:space="preserve">
+    <value>all</value>
+  </data>
+  <data name="BlockSetMessage" xml:space="preserve">
+    <value>Could not find block entered</value>
+  </data>
+  <data name="BotAddMessage" xml:space="preserve">
+    <value>bot name {0} not valid!</value>
+  </data>
+  <data name="BotAIParameter" xml:space="preserve">
+    <value>hunt</value>
+  </data>
+  <data name="CmdAboutDestroyedBy" xml:space="preserve">
+    <value>&amp;4Destroyed by {0}, using%3 {1}</value>
+  </data>
+  <data name="BotAddName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BotAddHelp" xml:space="preserve">
+    <value>/botadd &lt;name&gt; - Add a  new bot at your position.</value>
+  </data>
+  <data name="AwardParameter1" xml:space="preserve">
+    <value>take</value>
+  </data>
+  <data name="BotsMessage1" xml:space="preserve">
+    <value>No bots are alive.</value>
+  </data>
+  <data name="CmdAboutBreakForInfo" xml:space="preserve">
+    <value>Break/build a block to display information.</value>
+  </data>
+  <data name="BotAIName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BotAIHelp" xml:space="preserve">
+    <value>/botai &lt;add/del&gt; [AI name] &lt;extra&gt; - Adds or deletes [AI name]</value>
+  </data>
+  <data name="BotSetParameter7" xml:space="preserve">
+    <value>spin</value>
+  </data>
+  <data name="BotSetParameter6" xml:space="preserve">
+    <value>nod</value>
+  </data>
+  <data name="BotSetParameter5" xml:space="preserve">
+    <value>speed</value>
+  </data>
+  <data name="BotSetParameter4" xml:space="preserve">
+    <value>wait</value>
+  </data>
+  <data name="BotSetParameter3" xml:space="preserve">
+    <value>teleport</value>
+  </data>
+  <data name="BotSetParameter2" xml:space="preserve">
+    <value>walk</value>
+  </data>
+  <data name="BotSetParameter1" xml:space="preserve">
+    <value>kill</value>
+  </data>
+  <data name="BotSetParameter9" xml:space="preserve">
+    <value>reset</value>
+  </data>
+  <data name="BotSetParameter8" xml:space="preserve">
+    <value>linkscript</value>
+  </data>
+  <data name="BanIPMessage2" xml:space="preserve">
+    <value>Invalid IP!</value>
+  </data>
+  <data name="BanIPMessage3" xml:space="preserve">
+    <value>You can't ip-ban yourself.!</value>
+  </data>
+  <data name="BanIPMessage1" xml:space="preserve">
+    <value>You can't ip-ban the server!</value>
+  </data>
+  <data name="BanIPMessage6" xml:space="preserve">
+    <value>IP-BANNED: {0} by {1}</value>
+  </data>
+  <data name="BanIPMessage7" xml:space="preserve">
+    <value>IP-BANNED: {0} by console</value>
+  </data>
+  <data name="BanIPMessage4" xml:space="preserve">
+    <value>{0} is already ip-banned.</value>
+  </data>
+  <data name="BanIPMessage5" xml:space="preserve">
+    <value>{0} got &amp;8ip-banned!</value>
+  </data>
+  <data name="AwardParameter" xml:space="preserve">
+    <value>give</value>
+  </data>
+</root>
