@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Timers;
 using MCDzienny.Settings;
@@ -208,7 +209,7 @@ namespace MCDzienny
         // Token: 0x060006A2 RID: 1698 RVA: 0x000224E8 File Offset: 0x000206E8
         public static void InfectionCore(object sender, ElapsedEventArgs e)
         {
-            infected.ForEach(delegate(Player player1)
+            infected.ToList().ForEach(delegate(Player player1)
             {
                 Player.players.ForEach(delegate(Player player2)
                 {

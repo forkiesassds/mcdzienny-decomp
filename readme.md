@@ -3,10 +3,16 @@ An open source decompilation of MCDzienny which was the choice if you wanted a l
 
 ==Bugs==
 This decompilation has a lot of bugs such as:
-*Lava does not kill you
-*Physics sometimes does not work.
+*Blocks do not kill you
 *The GUI does not work
-*And more!
+*Adding bots results in an error, not allowing you to remove one if you add a bot.
+*/clearblockchanges does not work.
+*While following someone using /follow the player you are following is invisible.
+*/highlight can be used in Lava Survival
+*Renaming maps kinda works, but errors out.
+*Restarting the server kinda works, but attempts to use the GUI frontend.
+*/clearchat does nothing.
+*And many more!
 
 ==Contributing==
 

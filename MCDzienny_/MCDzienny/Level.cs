@@ -178,7 +178,7 @@ namespace MCDzienny
         public bool lavaUp;
 
         // Token: 0x04000BA9 RID: 2985
-        private readonly List<Check> ListCheck = new List<Check>();
+        private List<Check> ListCheck = new List<Check>();
 
         // Token: 0x04000BAA RID: 2986
         private readonly List<Update> ListUpdate = new List<Update>();
@@ -3446,7 +3446,7 @@ namespace MCDzienny
                 int my;
                 int mz;
                 var currentNum = default(int);
-                ListCheck.ForEach(delegate(Check C)
+                ListCheck.ToList().ForEach(delegate(Check C)
                 {
                     try
                     {
@@ -3499,7 +3499,7 @@ namespace MCDzienny
                                         try
                                         {
                                             var array = C.extraInfo.Split(' ');
-                                            foreach (var text2 in array)
+                                            foreach (var text2 in array.ToList())
                                             {
                                                 if (num2 % 2 == 0)
                                                     switch (text2)
