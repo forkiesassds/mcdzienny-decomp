@@ -3,7 +3,6 @@ An open source decompilation of MCDzienny which was the choice if you wanted a l
 
 ## Bugs
 This decompilation has a lot of bugs such as:
-* Blocks do not kill you
 * The GUI does not work
 * Adding bots results in an error, not allowing you to remove one if you add a bot.
 * /clearblockchanges does not work.

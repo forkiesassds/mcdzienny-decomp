@@ -1250,10 +1250,10 @@ namespace MCDzienny
                         if (Player.playersThatLeft.Count > 100) Player.playersThatLeft.Clear();
                     }
                 };
-                /*Server.locationChecker = new System.Timers.Timer(35.0);
+                Server.locationChecker = new System.Timers.Timer(35.0);
                 Server.locationChecker.AutoReset = false;
                 Server.locationChecker.Elapsed += this.PlayerLocationCheck;
-                Server.locationChecker.Start();*/
+                Server.locationChecker.Start();
                 afkTimer.Elapsed += afkTimer_Elapsed;
                 afkTimer.AutoReset = false;
                 afkTimer.Start();
