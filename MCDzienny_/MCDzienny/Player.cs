@@ -2306,7 +2306,7 @@ namespace MCDzienny
             }
 
             if (text == "Blockmension") V1.JsonData(this, "[{\"experimental\":{\"flags\":\"portal-blocks-enable\"}}]");
-            if (text == "TextHotKey" && Cpe.TextHotKey == 1)
+            /*if (text == "TextHotKey" && Cpe.TextHotKey == 1)
                 foreach (var availablePlugin in Server.Plugins.AvailablePlugins)
                 {
                     if (availablePlugin.Instance.GetType() != typeof(PluginKeyboardShortcuts)) continue;
@@ -2319,7 +2319,7 @@ namespace MCDzienny
                             V1.SetTextHotKey(this, "Shortcut", shortcut.Command, cpeHotKeyInfo.KeyCode,
                                 cpeHotKeyInfo.KeyMod);
                         }
-                }
+                }*/
 
             if (Interlocked.Decrement(ref extToRead) == 0) HandleLoginPart2();
         }
