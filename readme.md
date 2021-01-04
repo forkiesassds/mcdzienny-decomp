@@ -5,12 +5,8 @@ An open source decompilation of MCDzienny which was the choice if you wanted a l
 This decompilation has a lot of bugs such as:
 * The GUI does not work
 * Adding bots results in an error, not allowing you to remove one if you add a bot.
-* /clearblockchanges does not work.
-* While following someone using /follow the player you are following is invisible.
-* /highlight can be used in Lava Survival
-* Renaming maps kinda works, but errors out.
+* /follow doesn't work.
 * Restarting the server kinda works, but attempts to use the GUI frontend.
-* /clearchat does nothing.
 * And many more!
 
 ## Contributing
