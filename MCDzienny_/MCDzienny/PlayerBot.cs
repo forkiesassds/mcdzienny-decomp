@@ -12,14 +12,14 @@ namespace MCDzienny
         // Token: 0x04000CB8 RID: 3256
         public static List<PlayerBot> playerbots = new List<PlayerBot>(64);
 
+        // Token: 0x04000CC6 RID: 3270
+        private readonly ushort[] basepos = new ushort[3] {0, 0, 0};
+
         // Token: 0x04000CBB RID: 3259
         public string AIName = "";
 
-        // Token: 0x04000CC6 RID: 3270
-        private ushort[] basepos;
-
         // Token: 0x04000CCF RID: 3279
-        public Timer botTimer;
+        public Timer botTimer = new Timer(100);
 
         // Token: 0x04000CBE RID: 3262
         public string color;
@@ -34,13 +34,13 @@ namespace MCDzienny
         public int currentPoint;
 
         // Token: 0x04000CC9 RID: 3273
-        private ushort[] foundPos;
+        private ushort[] foundPos = new ushort[3] {0, 0, 0};
 
         // Token: 0x04000CCA RID: 3274
-        private byte[] foundRot;
+        private byte[] foundRot = new byte[2] {0, 0};
 
         // Token: 0x04000CB9 RID: 3257
-        public bool hunt;
+        public bool hunt = false;
 
         // Token: 0x04000CBD RID: 3261
         public byte id;
@@ -49,10 +49,10 @@ namespace MCDzienny
         private bool jumping;
 
         // Token: 0x04000CD1 RID: 3281
-        public Timer jumpTimer;
+        public Timer jumpTimer = new Timer(95);
 
         // Token: 0x04000CBA RID: 3258
-        public bool kill;
+        public bool kill = false;
 
         // Token: 0x04000CBF RID: 3263
         public Level level;
@@ -61,10 +61,10 @@ namespace MCDzienny
         private bool movement;
 
         // Token: 0x04000CCC RID: 3276
-        public int movementSpeed;
+        public int movementSpeed = 24;
 
         // Token: 0x04000CD0 RID: 3280
-        public Timer moveTimer;
+        public Timer moveTimer = new Timer(100 / 24);
 
         // Token: 0x04000CBC RID: 3260
         public string name;
@@ -73,16 +73,16 @@ namespace MCDzienny
         public bool nodUp;
 
         // Token: 0x04000CC5 RID: 3269
-        private ushort[] oldpos;
+        private ushort[] oldpos = new ushort[3] {0, 0, 0};
 
         // Token: 0x04000CC8 RID: 3272
-        private byte[] oldrot;
+        private byte[] oldrot = new byte[2] {0, 0};
 
         // Token: 0x04000CC4 RID: 3268
-        public ushort[] pos;
+        public ushort[] pos = new ushort[3] {0, 0, 0};
 
         // Token: 0x04000CC7 RID: 3271
-        public byte[] rot;
+        public byte[] rot = new byte[2] {0, 0};
 
         // Token: 0x04000CC3 RID: 3267
         public List<Pos> Waypoints = new List<Pos>();

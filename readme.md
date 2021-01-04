@@ -4,8 +4,6 @@ An open source decompilation of MCDzienny which was the choice if you wanted a l
 ## Bugs
 This decompilation has a lot of bugs such as:
 * The GUI does not work
-* Adding bots results in an error, not allowing you to remove one if you add a bot.
-* /follow doesn't work.
 * Restarting the server kinda works, but attempts to use the GUI frontend.
 * And many more!
 
