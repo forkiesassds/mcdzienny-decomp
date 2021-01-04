@@ -1,12 +1,6 @@
 # MCDzienny Decompilation
 An open source decompilation of MCDzienny which was the choice if you wanted a lava survival server. This server software wasn't updated for quite some time, and it wont be updated at all due to it's closed source nature.
 
-## Bugs
-This decompilation has a lot of bugs such as:
-* The GUI does not work
-* Restarting the server kinda works, but attempts to use the GUI frontend.
-* And many more!
-
 ## Contributing
 
 You can help me fix all the bugs and errors caused by the decompilation process by making a pull request.

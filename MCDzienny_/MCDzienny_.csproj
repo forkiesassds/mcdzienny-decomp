@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MCDzienny_</RootNamespace>
     <AssemblyName>MCDzienny_</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ApplicationIcon>MCDzienny_.ico</ApplicationIcon>
@@ -73,14 +73,12 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.SQLite">
+    <Reference Include="System.Data.SQLite, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\System.Data.SQLite.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xaml">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
@@ -664,11 +662,6 @@
     </Compile>
     <Compile Include="MCDzienny\Plugins\Plgn.cs" />
     <Compile Include="MCDzienny\Plugins\Plugin.cs" />
-    <Compile Include="MCDzienny\Plugins\PluginKeyboardShortcuts.cs" />
-    <Compile Include="MCDzienny\Plugins\PluginKeyboardShortcutsGui.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MCDzienny\Plugins\PluginKeyboardShortcutsGui2.cs" />
     <Compile Include="MCDzienny\Plugins\PluginManager.cs" />
     <Compile Include="MCDzienny\Plugins\RemovePlugin.cs" />
     <Compile Include="MCDzienny\Plugins\stuffWithGui.cs" />
@@ -788,7 +781,13 @@
     <EmbeddedResource Include="MCDzienny\GUI\LavaProperties.resources" />
     <EmbeddedResource Include="MCDzienny\GUI\PopUpMessage.resources" />
     <EmbeddedResource Include="MCDzienny\GUI\PropertyWindow.resources" />
+    <EmbeddedResource Include="MCDzienny\Gui\PropertyWindow.resx">
+      <DependentUpon>PropertyWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MCDzienny\GUI\Tools.resources" />
+    <EmbeddedResource Include="MCDzienny\Gui\Tools.resx">
+      <DependentUpon>Tools.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MCDzienny\GUI\UpdateWindow.resources" />
     <EmbeddedResource Include="MCDzienny\GUI\WhiteListEditor.resources" />
     <EmbeddedResource Include="MCDzienny\GUI\Window.resources" />
@@ -830,7 +829,6 @@
     <EmbeddedResource Include="MCDzienny\PluginControlRemovePlugin.resources" />
     <EmbeddedResource Include="MCDzienny\Plugins\GuiExample.resources" />
     <EmbeddedResource Include="MCDzienny\Plugins\GuiImportFromDat.resources" />
-    <EmbeddedResource Include="MCDzienny\Plugins\PluginKeyboardShortcutsGui.resources" />
     <EmbeddedResource Include="MCDzienny\Properties\Resources.resources" />
   </ItemGroup>
   <ItemGroup>

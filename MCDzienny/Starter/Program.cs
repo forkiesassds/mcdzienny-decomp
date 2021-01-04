@@ -23,8 +23,8 @@ namespace Starter
         // Token: 0x0600000C RID: 12 RVA: 0x0000214F File Offset: 0x0000034F
         private static void openServer(string[] args)
         {
-            Window.showWarning = false;
-            Main(args);
+            Window.showWarning = false; 
+            MCDzienny_.Gui.Program.Main(args);
         }
     }
 }

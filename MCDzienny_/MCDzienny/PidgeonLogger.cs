@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Timers;
 using System.Windows.Forms;
+using MCDzienny.Misc;
 using Timer = System.Timers.Timer;
 
 namespace MCDzienny
@@ -146,18 +147,17 @@ namespace MCDzienny
                     _errorCache.Enqueue(message);
                     Monitor.Pulse(_lockObject);
                 }
-
-                if (NeedRestart)
+                if (NeedRestart == true)
                 {
                     Server.listen.Close();
                     Server.Setup();
                     NeedRestart = false;
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                File.AppendAllText("ErrorLogError.log", getErrorText(ex));
-                MessageBox.Show(ex.StackTrace + " " + ex.Message);
+                File.AppendAllText("ErrorLogError.log", getErrorText(e));
+                MessageBox.Show(e.StackTrace + " " + e.Message);
                 Server.s.Log("There was an error in the error logger!");
             }
         }
@@ -167,22 +167,41 @@ namespace MCDzienny
         {
             try
             {
-                var stringBuilder = new StringBuilder();
-                var ex2 = ex;
-                stringBuilder.AppendLine("----" + DateTime.Now + " ----");
-                while (ex2 != null)
+                StringBuilder sb = new StringBuilder();
+
+                sb.AppendLine("----" + DateTime.Now + " ----");
+                while (ex != null)
                 {
-                    stringBuilder.AppendLine(getErrorText(ex2));
-                    ex2 = ex2.InnerException;
+                    sb.AppendLine(getErrorText(ex));
+                    ex = ex.InnerException;
                 }
 
-                stringBuilder.AppendLine(new string('-', 25));
-                LogError(stringBuilder.ToString());
+                sb.AppendLine(new string('-', 25));
+
+                if (!sb.ToString().IsNullOrWhiteSpaced())
+                {
+                    Server.s.ErrorCase(sb.ToString());
+                }
+                lock (_lockObject)
+                {
+                    _errorCache.Enqueue(sb.ToString());
+                    Monitor.Pulse(_lockObject);
+                }
+
+
+
+                if (NeedRestart == true)
+                {
+                    Server.listen.Close();
+                    Server.Setup();
+
+                    NeedRestart = false;
+                }
             }
-            catch (Exception ex3)
+            catch (Exception e)
             {
-                File.AppendAllText("ErrorLogError.log", getErrorText(ex3));
-                MessageBox.Show(ex3.StackTrace + " " + ex3.Message);
+                File.AppendAllText("ErrorLogError.log", getErrorText(e));
+                MessageBox.Show(e.StackTrace + " " + e.Message);
                 Server.s.Log("There was an error in the error logger!");
             }
         }
@@ -212,15 +231,17 @@ namespace MCDzienny
         // Token: 0x0600186F RID: 6255 RVA: 0x000A52BC File Offset: 0x000A34BC
         private static string getErrorText(Exception e)
         {
-            var stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("Type: " + e.GetType().Name);
-            stringBuilder.AppendLine("Source: " + e.Source);
-            stringBuilder.AppendLine("Message: " + e.Message);
-            stringBuilder.AppendLine("Target: " + e.TargetSite.Name);
-            stringBuilder.AppendLine("Trace: " + e.StackTrace);
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Type: " + e.GetType().Name);
+            sb.AppendLine("Source: " + e.Source);
+            sb.AppendLine("Message: " + e.Message);
+            sb.AppendLine("Target: " + e.TargetSite.Name);
+            sb.AppendLine("Trace: " + e.StackTrace);
             if (e.Message.IndexOf("An existing connection was forcibly closed by the remote host") != -1)
+            {
                 NeedRestart = true;
-            return stringBuilder.ToString();
+            }
+            return sb.ToString();
         }
 
         // Token: 0x06001870 RID: 6256 RVA: 0x000A536C File Offset: 0x000A356C

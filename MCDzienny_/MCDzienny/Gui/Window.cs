@@ -232,7 +232,7 @@ namespace MCDzienny.Gui
             Hide();
             thisWindow = this;
             Text = "<server name here>";
-            Icon = new Icon(Assembly.GetExecutingAssembly().GetManifestResourceStream("MCDzienny.mcdzienny.ico"));
+            Icon = new Icon(Assembly.GetExecutingAssembly().GetManifestResourceStream("MCDzienny_.MCDzienny.mcdzienny.ico"));
             if (!StartMinimized)
                 WindowState = FormWindowState.Normal;
             else
@@ -334,11 +334,6 @@ namespace MCDzienny.Gui
             Server.Plugins.AvailablePlugins.Add(new AvailablePlugin
             {
                 Instance = new RemovePlugin(),
-                IsCore = true
-            });
-            Server.Plugins.AvailablePlugins.Add(new AvailablePlugin
-            {
-                Instance = new PluginKeyboardShortcuts(),
                 IsCore = true
             });
             Server.Plugins.AvailablePlugins.Add(new AvailablePlugin

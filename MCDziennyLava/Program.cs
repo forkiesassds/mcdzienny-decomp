@@ -24,7 +24,7 @@ namespace Starter
         private static void openServer(string[] args)
         {
             Window.showWarning = false;
-            Main(args);
+            MCDzienny_.Gui.Program.Main(args);
         }
     }
 }
