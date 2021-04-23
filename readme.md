@@ -21,4 +21,4 @@ Build the entire solution.
 Extract the folders from the MCDzienny zip file and put it in Build/bin/(Debug or Release).
 
 ### Step 5
-You are ready to build and run the decompied source!
+You are ready to build and run the decompiled source!
