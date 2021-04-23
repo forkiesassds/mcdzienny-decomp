@@ -1654,7 +1654,7 @@ namespace MCDzienny
                     };
                     playerItem.Add(item);
                 });
-                Window.thisWindow.UpdatePlayerListView(playerItem); // errors out, but the gui is broken...
+                if (!CLI) Window.thisWindow.UpdatePlayerListView(playerItem);
             }
             catch (Exception ex)
             {
