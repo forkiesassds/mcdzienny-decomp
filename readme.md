@@ -1,5 +1,5 @@
 # MCDzienny Decompilation
-An open source decompilation of MCDzienny which was the choice if you wanted a lava survival server. This server software wasn't updated for quite some time, and it wont be updated at all due to it's closed source nature.
+An open source decompilation of MCDzienny (Version 12.2.0.0) which was the choice if you wanted a lava survival server. This server software wasn't updated for quite some time, and it wont be updated at all due to it's closed source nature.
 
 ## Contributing
 
