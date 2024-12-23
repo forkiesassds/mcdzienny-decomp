@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+                id="root"
+                xmlns="">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="CommandPlayerNonexistent" xml:space="preserve"><value>Gracz \"{0}\" nie istnieje!</value></data>
+    <data name="WelcomeFirstVisit" xml:space="preserve"><value>Witaj {0}! To twoja pierwsza wizyta.</value></data>
+    <data name="WarningBreakingBlocks" xml:space="preserve"><value>{0} psuje cos.</value></data>
+    <data name="CommandJailWarning" xml:space="preserve"><value>Nie mozesz korzystac z komendy bedac uwiezionym.</value></data>
+    <data name="ChatNoMessageEntered" xml:space="preserve"><value>Pusta wiadomosc.</value></data>
+    <data name="CommandUsedOneself" xml:space="preserve"><value>Probujesz mowic do siebie, ha?</value></data>
+    <data name="WarningCantDisturbBlock" xml:space="preserve"><value>Blok jest aktywny, nie ruszaj go!</value></data>
+    <data name="ErrorOccured" xml:space="preserve"><value>Wystapil blad: {0}</value></data>
+    <data name="WelcomeAwards" xml:space="preserve"><value>Posiadasz {0} odznaczen.</value></data>
+    <data name="WarningNoMessageStored" xml:space="preserve"><value>Brak wiadomosci.</value></data>
+    <data name="CommandFailed" xml:space="preserve"><value>Komenda zawiodla.</value></data>
+    <data name="AfkMessage" xml:space="preserve"><value>auto: Nie ruszyl sie od {0} minut</value></data>
+    <data name="KickIllegalName" xml:space="preserve"><value>Nieprawidlowe imie!</value></data>
+    <data name="KickLoggedAsYou" xml:space="preserve"><value>Ktos sie z tym samym imieniem zalogowal.</value></data>
+    <data name="ChatAppended" xml:space="preserve"><value>Wiadomosc dolaczona!</value></data>
+    <data name="CommandNoBind" xml:space="preserve"><value>Zadna komenda nie jest przypisana do /{0}</value></data>
+    <data name="KickDisconnected" xml:space="preserve"><value>Rozlaczony.</value></data>
+    <data name="CommandNoEntered" xml:space="preserve"><value>Brak komendy.</value></data>
+    <data name="WarningBuiltTooLow" xml:space="preserve"><value>Nie wolno ci budowac tak nisko!</value></data>
+    <data name="WarningBuiltTooFar" xml:space="preserve"><value>Nie mozesz budowac tak daleko.</value></data>
+    <data name="WelcomeMoney" xml:space="preserve"><value>Twoj majatek to&amp;a {0}</value></data>
+    <data name="WelcomeInbox" xml:space="preserve"><value>&amp;cMasz&amp;f {0} &amp;cwiadomosci w /inbox</value></data>
+    <data name="KickAlreadyLogged" xml:space="preserve"><value>Juz zalogowany!</value></data>
+    <data name="WarningPortalDestinationUnloaded" xml:space="preserve"><value>Miejsce docelowe portalu nie jest zaladowane.</value></data>
+    <data name="VoteDecisionNo" xml:space="preserve"><value>nie</value></data>
+    <data name="LatelyKnownAs" xml:space="preserve"><value>Ostatnio znany jako:</value></data>
+    <data name="AfkNoLonger" xml:space="preserve"><value>-{0}- juz nie jest AFK</value></data>
+    <data name="GlobalChatWorldTag" xml:space="preserve"><value>&lt;Swiat&gt;</value></data>
+    <data name="WelcomePlayersCount" xml:space="preserve"><value>Obecnie na serwerze jest&amp;a {0} graczy.</value></data>
+    <data name="WelcomePlayerCount" xml:space="preserve"><value>Obecnie na serwerze jest&amp;a {0} gracz.</value></data>
+    <data name="CommandUnknown" xml:space="preserve"><value>Nieznana komenda \"{0}\"!</value></data>
+    <data name="KickLoginFailed" xml:space="preserve"><value>Blad logowania. Ponow probe.</value></data>
+    <data name="CommandNotAllowedToUse" xml:space="preserve"><value>Nie masz uprawnien do komendy \"{0}\"!</value></data>
+    <data name="DiedTimesGlobalMessage" xml:space="preserve"><value>{0} zginal&amp;3 {1} razy</value></data>
+    <data name="KickUnknownAction" xml:space="preserve"><value>Nieznane dzialanie!</value></data>
+    <data name="CommandNoUseWhenMuted" xml:space="preserve"><value>Nie mozesz uzywac /{0} bedac uciszonym.</value></data>
+    <data name="WarningDisallowedBlockType" xml:space="preserve"><value>Nie mozesz stawiac tego typu bloku.</value></data>
+    <data name="VoteDecisionNoShortcut" xml:space="preserve"><value>n</value></data>
+    <data name="ErrorCommand" xml:space="preserve"><value>Wystapil blad podczas uzycia komendy!</value></data>
+    <data name="ChatIllegalCharacter" xml:space="preserve"><value>Nieprawidlowy znak w wiadomosci!</value></data>
+    <data name="VoteDecisionYes" xml:space="preserve"><value>tak</value></data>
+    <data name="WelcomeAnotherVisit" xml:space="preserve"><value>Witaj ponownie! {0}! Byles juz tutaj {1} razy!</value></data>
+    <data name="WarningPortalHasNoExit" xml:space="preserve"><value>Portal nie ma wyjscia.</value></data>
+    <data name="GlobalMessageKicked" xml:space="preserve"><value>&amp;c- {0} wyrzucony ({1}).</value></data>
+    <data name="KickAfk" xml:space="preserve"><value>Zostales wyrzucony za bezczynnosc przez {0} min.</value></data>
+    <data name="ChatTempMutedTime" xml:space="preserve"><value>Jestes uciszony przez kolejne {0} sekund.</value></data>
+    <data name="GlobalMessageLeftGame" xml:space="preserve"><value>{0} opuscil gre.</value></data>
+    <data name="KickServerFull" xml:space="preserve"><value>Serwer jest pelen!</value></data>
+    <data name="WarningCantBuildHere" xml:space="preserve"><value>Nie mozesz tu budowac!</value></data>
+    <data name="ChatModeration" xml:space="preserve"><value>Czat jest moderowany, nie mozesz przemawiac.</value></data>
+    <data name="KickWrongVersion" xml:space="preserve"><value>Zla wersja klienta!</value></data>
+    <data name="WelcomeModified" xml:space="preserve"><value>Zmodyfikowales w sumie&amp;a {0} blokow!</value></data>
+    <data name="KickTempBan" xml:space="preserve"><value>Wciaz masz bana (tymczasowego)!</value></data>
+    <data name="IrcMessageKicked" xml:space="preserve"><value>{0} wyrzucony ({1}).</value></data>
+    <data name="VoteDecisionYesShortcut" xml:space="preserve"><value>t</value></data>
+    <data name="ChatToOps" xml:space="preserve"><value>Do Op. &amp;f-{0}&amp;f- {1}</value></data>
+    <data name="ChatMuted" xml:space="preserve"><value>Jestes uciszony.</value></data>
+    <data name="VoteThanks" xml:space="preserve"><value>Dziekuje za oddany glos!</value></data>
+    <data name="JoinGlobalMessage" xml:space="preserve"><value>{0} przylaczyl sie do gry.</value></data>
+</root>

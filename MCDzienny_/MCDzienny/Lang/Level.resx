@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+                id="root"
+                xmlns="">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="NotAllowedToPlaceGoldRock" xml:space="preserve"><value>You are not allowed to place gold rock on this map.</value></data>
+    <data name="ZoneBelongsToNoOne" xml:space="preserve"><value>This zone belongs to no one.</value></data>
+    <data name="OutOfDoors" xml:space="preserve"><value>You run out of doors. Check the /store.</value></data>
+    <data name="OutOfWater" xml:space="preserve"><value>You run out of water. Check the /store.</value></data>
+    <data name="WarningBlockProtectedByLevel" xml:space="preserve"><value>You can't modify block placed by someone with higher level than yours.</value></data>
+    <data name="MapUnloadedGlobalMessage" xml:space="preserve"><value>&amp;3{0} was unloaded.</value></data>
+    <data name="ZoneDeleted" xml:space="preserve"><value>Zone deleted for&amp;b {0}</value></data>
+    <data name="ErrorMapSaveGlobalMessage" xml:space="preserve"><value>FAILED TO SAVE : {0}</value></data>
+    <data name="OutOfSponges" xml:space="preserve"><value>You run out of sponges. Check the /store.</value></data>
+    <data name="PhysicsShutdownGlobalMessage" xml:space="preserve"><value>Physics shutdown on&amp;b {0}</value></data>
+    <data name="PhysicsWarning" xml:space="preserve"><value>Physics warning!</value></data>
+    <data name="ZoneBelongsTo" xml:space="preserve"><value>This zone belongs to&amp;b {0}.</value></data>
+    <data name="WarningBuildPermission" xml:space="preserve"><value>Must be at least {0} to build here</value></data>
+    <data name="WarningBlockOwned" xml:space="preserve"><value>This block is owned by {0}.</value></data>
+    <data name="ZoneNotFoundNotDeleted" xml:space="preserve"><value>No zones found to delete.</value></data>
+</root>

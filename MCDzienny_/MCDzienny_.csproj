@@ -1,0 +1,796 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{B2EDE7D0-441D-47E9-AC61-6794FEF68571}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCDzienny_</RootNamespace>
+    <AssemblyName>MCDzienny_</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <TargetFrameworkProfile />
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <LangVersion>4</LangVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Build\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>4</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\Build\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>4</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="icon_ok.png" />
+    <None Remove="icon_wrong.png" />
+    <None Remove="mcdzienny.ico" />
+    <EmbeddedResource Include="MCDzienny\Gui\PropertyWindow.resx">
+      <DependentUpon>PropertyWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCDzienny\Gui\Window.resx">
+      <DependentUpon>Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCDzienny\Lang\Command.resx">
+      <DependentUpon>Command.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCDzienny\Lang\LavaSystem.resx">
+      <DependentUpon>LavaSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCDzienny\Lang\Level.resx">
+      <DependentUpon>Level.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCDzienny\Lang\Player.resx">
+      <DependentUpon>Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCDzienny\Lang\Player.xpl.resx" />
+    <EmbeddedResource Include="MCDzienny\Lang\Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="icon_ok.png" LogicalName="icon_ok.png" />
+    <EmbeddedResource Include="icon_wrong.png" LogicalName="icon_wrong.png" />
+    <EmbeddedResource Include="mcdzienny.ico" LogicalName="mcdzienny.ico" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="IRCLibrary">
+      <HintPath>..\lib\IRCLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.3\lib\net35-full\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>..\lib\Mono.Data.Sqlite.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.2\lib\net35\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SuperSocket.Common, Version=1.5.3.0, Culture=neutral, PublicKeyToken=6c80000676988ebb, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperWebSocketNETServer.0.8\lib\net35\SuperSocket.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SuperSocket.Facility, Version=1.5.3.0, Culture=neutral, PublicKeyToken=6c80000676988ebb, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperWebSocketNETServer.0.8\lib\net35\SuperSocket.Facility.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SuperSocket.SocketBase, Version=1.5.3.0, Culture=neutral, PublicKeyToken=6c80000676988ebb, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperWebSocketNETServer.0.8\lib\net35\SuperSocket.SocketBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SuperSocket.SocketEngine, Version=1.5.3.0, Culture=neutral, PublicKeyToken=6c80000676988ebb, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperWebSocketNETServer.0.8\lib\net35\SuperSocket.SocketEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SuperWebSocket, Version=0.8.0.0, Culture=neutral, PublicKeyToken=7ba53b9a7cef5d1c, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperWebSocketNETServer.0.8\lib\net35\SuperWebSocket.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Threading">
+      <HintPath>..\lib\System.Threading.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MCDzienny\AABB.cs" />
+    <Compile Include="MCDzienny\ActionElement.cs" />
+    <Compile Include="MCDzienny\ActionScripts\Action.cs" />
+    <Compile Include="MCDzienny\ActionScripts\ActionList.cs" />
+    <Compile Include="MCDzienny\AI.cs" />
+    <Compile Include="MCDzienny\AntigriefType.cs" />
+    <Compile Include="MCDzienny\AuthenticationProvider.cs" />
+    <Compile Include="MCDzienny\AutoSaver.cs" />
+    <Compile Include="MCDzienny\Awards.cs" />
+    <Compile Include="MCDzienny\BasicAI.cs" />
+    <Compile Include="MCDzienny\BasicAttackAI.cs" />
+    <Compile Include="MCDzienny\BasicDrawArgs.cs" />
+    <Compile Include="MCDzienny\Beat.cs" />
+    <Compile Include="MCDzienny\Block.cs" />
+    <Compile Include="MCDzienny\BlockCatch.cs" />
+    <Compile Include="MCDzienny\BlockChanges.cs" />
+    <Compile Include="MCDzienny\BlockInfo.cs" />
+    <Compile Include="MCDzienny\BlockMap.cs" />
+    <Compile Include="MCDzienny\BlockPoints.cs" />
+    <Compile Include="MCDzienny\BlockPos.cs" />
+    <Compile Include="MCDzienny\BlockTrigger.cs" />
+    <Compile Include="MCDzienny\Bot\MainLoop.cs" />
+    <Compile Include="MCDzienny\BoundingBox.cs" />
+    <Compile Include="MCDzienny\BrowsedObject.cs" />
+    <Compile Include="MCDzienny\ByteStream.cs" />
+    <Compile Include="MCDzienny\c.cs" />
+    <Compile Include="MCDzienny\ChangeAction.cs" />
+    <Compile Include="MCDzienny\ChangeInfo.cs" />
+    <Compile Include="MCDzienny\ChatFilter.cs" />
+    <Compile Include="MCDzienny\ChatOtherEventArgs.cs" />
+    <Compile Include="MCDzienny\ChatType.cs" />
+    <Compile Include="MCDzienny\Check.cs" />
+    <Compile Include="MCDzienny\CmdAbort.cs" />
+    <Compile Include="MCDzienny\CmdAbout.cs" />
+    <Compile Include="MCDzienny\CmdAccept.cs" />
+    <Compile Include="MCDzienny\CmdAfk.cs" />
+    <Compile Include="MCDzienny\CmdAka.cs" />
+    <Compile Include="MCDzienny\CmdAlive.cs" />
+    <Compile Include="MCDzienny\CmdAward.cs" />
+    <Compile Include="MCDzienny\CmdAwardMod.cs" />
+    <Compile Include="MCDzienny\CmdAwards.cs" />
+    <Compile Include="MCDzienny\CmdBan.cs" />
+    <Compile Include="MCDzienny\CmdBanip.cs" />
+    <Compile Include="MCDzienny\CmdBestScores.cs" />
+    <Compile Include="MCDzienny\CmdBind.cs" />
+    <Compile Include="MCDzienny\CmdBlocks.cs" />
+    <Compile Include="MCDzienny\CmdBlockSet.cs" />
+    <Compile Include="MCDzienny\CmdBotAdd.cs" />
+    <Compile Include="MCDzienny\CmdBotAI.cs" />
+    <Compile Include="MCDzienny\CmdBotRemove.cs" />
+    <Compile Include="MCDzienny\CmdBots.cs" />
+    <Compile Include="MCDzienny\CmdBotSet.cs" />
+    <Compile Include="MCDzienny\CmdBotSummon.cs" />
+    <Compile Include="MCDzienny\CmdBuy.cs" />
+    <Compile Include="MCDzienny\CmdChangePlayerExp.cs" />
+    <Compile Include="MCDzienny\CmdClearBlockChanges.cs" />
+    <Compile Include="MCDzienny\CmdClearChat.cs" />
+    <Compile Include="MCDzienny\CmdClick.cs" />
+    <Compile Include="MCDzienny\CmdClones.cs" />
+    <Compile Include="MCDzienny\CmdCmdBind.cs" />
+    <Compile Include="MCDzienny\CmdCmdCreate.cs" />
+    <Compile Include="MCDzienny\CmdCmdLoad.cs" />
+    <Compile Include="MCDzienny\CmdCmdSet.cs" />
+    <Compile Include="MCDzienny\CmdCmdUnload.cs" />
+    <Compile Include="MCDzienny\CmdCodes.cs" />
+    <Compile Include="MCDzienny\CmdColor.cs" />
+    <Compile Include="MCDzienny\CmdCompile.cs" />
+    <Compile Include="MCDzienny\CmdConeTest.cs" />
+    <Compile Include="MCDzienny\CmdCopy.cs" />
+    <Compile Include="MCDzienny\CmdCountdown.cs" />
+    <Compile Include="MCDzienny\CmdCrashServer.cs" />
+    <Compile Include="MCDzienny\CmdCTF.cs" />
+    <Compile Include="MCDzienny\CmdCuboid.cs" />
+    <Compile Include="MCDzienny\CmdDebug.cs" />
+    <Compile Include="MCDzienny\CmdDelete.cs" />
+    <Compile Include="MCDzienny\CmdDeleteLvl.cs" />
+    <Compile Include="MCDzienny\CmdDemote.cs" />
+    <Compile Include="MCDzienny\CmdDislike.cs" />
+    <Compile Include="MCDzienny\CmdDraw.cs" />
+    <Compile Include="MCDzienny\CmdDrill.cs" />
+    <Compile Include="MCDzienny\CmdDrop.cs" />
+    <Compile Include="MCDzienny\CmdEllipsoid.cs" />
+    <Compile Include="MCDzienny\CmdEmote.cs" />
+    <Compile Include="MCDzienny\CmdEnvironment.cs" />
+    <Compile Include="MCDzienny\CmdExample.cs" />
+    <Compile Include="MCDzienny\CmdFarewell.cs" />
+    <Compile Include="MCDzienny\CmdFetch.cs" />
+    <Compile Include="MCDzienny\CmdFill.cs" />
+    <Compile Include="MCDzienny\CmdFillOLD.cs" />
+    <Compile Include="MCDzienny\CmdFixGrass.cs" />
+    <Compile Include="MCDzienny\CmdFixMyMaps.cs" />
+    <Compile Include="MCDzienny\CmdFlipHeads.cs" />
+    <Compile Include="MCDzienny\CmdFly.cs" />
+    <Compile Include="MCDzienny\CmdFollow.cs" />
+    <Compile Include="MCDzienny\CmdFreeid.cs" />
+    <Compile Include="MCDzienny\CmdFreeze.cs" />
+    <Compile Include="MCDzienny\CmdGive.cs" />
+    <Compile Include="MCDzienny\CmdGoto.cs" />
+    <Compile Include="MCDzienny\CmdGun.cs" />
+    <Compile Include="MCDzienny\CmdHacks.cs" />
+    <Compile Include="MCDzienny\CmdHammer.cs" />
+    <Compile Include="MCDzienny\CmdHasirc.cs" />
+    <Compile Include="MCDzienny\CmdHeartbeat.cs" />
+    <Compile Include="MCDzienny\CmdHelp.cs" />
+    <Compile Include="MCDzienny\CmdHide.cs" />
+    <Compile Include="MCDzienny\CmdHighlight.cs" />
+    <Compile Include="MCDzienny\CmdHome.cs" />
+    <Compile Include="MCDzienny\CmdHumans.cs" />
+    <Compile Include="MCDzienny\CmdImageprint.cs" />
+    <Compile Include="MCDzienny\CmdImpersonate.cs" />
+    <Compile Include="MCDzienny\CmdImport.cs" />
+    <Compile Include="MCDzienny\CmdInbox.cs" />
+    <Compile Include="MCDzienny\CmdInfection.cs" />
+    <Compile Include="MCDzienny\CmdInfo.cs" />
+    <Compile Include="MCDzienny\CmdInvincible.cs" />
+    <Compile Include="MCDzienny\CmdIronman.cs" />
+    <Compile Include="MCDzienny\CmdIronwoman.cs" />
+    <Compile Include="MCDzienny\CmdItems.cs" />
+    <Compile Include="MCDzienny\CmdJail.cs" />
+    <Compile Include="MCDzienny\CmdJoker.cs" />
+    <Compile Include="MCDzienny\CmdKick.cs" />
+    <Compile Include="MCDzienny\CmdKickAll.cs" />
+    <Compile Include="MCDzienny\CmdKickban.cs" />
+    <Compile Include="MCDzienny\CmdKill.cs" />
+    <Compile Include="MCDzienny\CmdLastCmd.cs" />
+    <Compile Include="MCDzienny\CmdLavaPortal.cs" />
+    <Compile Include="MCDzienny\CmdLevels.cs" />
+    <Compile Include="MCDzienny\CmdLike.cs" />
+    <Compile Include="MCDzienny\CmdLimit.cs" />
+    <Compile Include="MCDzienny\CmdLine.cs" />
+    <Compile Include="MCDzienny\CmdLives.cs" />
+    <Compile Include="MCDzienny\CmdLoad.cs" />
+    <Compile Include="MCDzienny\CmdLoadLavaMap.cs" />
+    <Compile Include="MCDzienny\CmdLoadZombieMap.cs" />
+    <Compile Include="MCDzienny\CmdLowlag.cs" />
+    <Compile Include="MCDzienny\CmdMake.cs" />
+    <Compile Include="MCDzienny\CmdMap.cs" />
+    <Compile Include="MCDzienny\CmdMapInfo.cs" />
+    <Compile Include="MCDzienny\CmdMe.cs" />
+    <Compile Include="MCDzienny\CmdMeasure.cs" />
+    <Compile Include="MCDzienny\CmdMegaboid.cs" />
+    <Compile Include="MCDzienny\CmdMessageBlock.cs" />
+    <Compile Include="MCDzienny\CmdMissile.cs" />
+    <Compile Include="MCDzienny\CmdMode.cs" />
+    <Compile Include="MCDzienny\CmdModerate.cs" />
+    <Compile Include="MCDzienny\CmdMove.cs" />
+    <Compile Include="MCDzienny\CmdMoveAll.cs" />
+    <Compile Include="MCDzienny\CmdMuseum.cs" />
+    <Compile Include="MCDzienny\CmdMute.cs" />
+    <Compile Include="MCDzienny\CmdMyMap.cs" />
+    <Compile Include="MCDzienny\CmdNewLvl.cs" />
+    <Compile Include="MCDzienny\CmdOpChat.cs" />
+    <Compile Include="MCDzienny\CmdOutline.cs" />
+    <Compile Include="MCDzienny\CmdPaint.cs" />
+    <Compile Include="MCDzienny\CmdPaste.cs" />
+    <Compile Include="MCDzienny\CmdPause.cs" />
+    <Compile Include="MCDzienny\CmdPay.cs" />
+    <Compile Include="MCDzienny\CmdPCount.cs" />
+    <Compile Include="MCDzienny\CmdPermissionBuild.cs" />
+    <Compile Include="MCDzienny\CmdPermissionVisit.cs" />
+    <Compile Include="MCDzienny\CmdPhysics.cs" />
+    <Compile Include="MCDzienny\CmdPillarRemover.cs" />
+    <Compile Include="MCDzienny\CmdPing.cs" />
+    <Compile Include="MCDzienny\CmdPlayers.cs" />
+    <Compile Include="MCDzienny\CmdPoints.cs" />
+    <Compile Include="MCDzienny\CmdPortal.cs" />
+    <Compile Include="MCDzienny\CmdPosition.cs" />
+    <Compile Include="MCDzienny\CmdPossess.cs" />
+    <Compile Include="MCDzienny\CmdPromote.cs" />
+    <Compile Include="MCDzienny\CmdRainbow.cs" />
+    <Compile Include="MCDzienny\CmdRankMsg.cs" />
+    <Compile Include="MCDzienny\CmdRankUp.cs" />
+    <Compile Include="MCDzienny\CmdRedo.cs" />
+    <Compile Include="MCDzienny\CmdReferee.cs" />
+    <Compile Include="MCDzienny\CmdReflection.cs" />
+    <Compile Include="MCDzienny\CmdRepeat.cs" />
+    <Compile Include="MCDzienny\CmdReplace.cs" />
+    <Compile Include="MCDzienny\CmdReplaceAll.cs" />
+    <Compile Include="MCDzienny\CmdReplaceNot.cs" />
+    <Compile Include="MCDzienny\CmdReport.cs" />
+    <Compile Include="MCDzienny\CmdReset.cs" />
+    <Compile Include="MCDzienny\CmdResetBot.cs" />
+    <Compile Include="MCDzienny\CmdRestart.cs" />
+    <Compile Include="MCDzienny\CmdRestartPhysics.cs" />
+    <Compile Include="MCDzienny\CmdRestore.cs" />
+    <Compile Include="MCDzienny\CmdResults.cs" />
+    <Compile Include="MCDzienny\CmdRetrieve.cs" />
+    <Compile Include="MCDzienny\CmdReveal.cs" />
+    <Compile Include="MCDzienny\CmdReview.cs" />
+    <Compile Include="MCDzienny\CmdRide.cs" />
+    <Compile Include="MCDzienny\CmdRoll.cs" />
+    <Compile Include="MCDzienny\CmdRules.cs" />
+    <Compile Include="MCDzienny\CmdSave.cs" />
+    <Compile Include="MCDzienny\CmdSaveLavaMap.cs" />
+    <Compile Include="MCDzienny\CmdSay.cs" />
+    <Compile Include="MCDzienny\CmdScore.cs" />
+    <Compile Include="MCDzienny\CmdSend.cs" />
+    <Compile Include="MCDzienny\CmdServerReport.cs" />
+    <Compile Include="MCDzienny\CmdSetColor.cs" />
+    <Compile Include="MCDzienny\CmdSetLava.cs" />
+    <Compile Include="MCDzienny\CmdSetModel.cs" />
+    <Compile Include="MCDzienny\CmdSetRank.cs" />
+    <Compile Include="MCDzienny\CmdSetspawn.cs" />
+    <Compile Include="MCDzienny\CmdSetTitle.cs" />
+    <Compile Include="MCDzienny\CmdSetZombie.cs" />
+    <Compile Include="MCDzienny\CmdShutdown.cs" />
+    <Compile Include="MCDzienny\CmdSimpleCuboidTest.cs" />
+    <Compile Include="MCDzienny\CmdSlap.cs" />
+    <Compile Include="MCDzienny\CmdSpawn.cs" />
+    <Compile Include="MCDzienny\CmdSpheroid.cs" />
+    <Compile Include="MCDzienny\CmdSpin.cs" />
+    <Compile Include="MCDzienny\CmdStairs.cs" />
+    <Compile Include="MCDzienny\CmdStars.cs" />
+    <Compile Include="MCDzienny\CmdStatic.cs" />
+    <Compile Include="MCDzienny\CmdStats.cs" />
+    <Compile Include="MCDzienny\CmdStore.cs" />
+    <Compile Include="MCDzienny\CmdSummon.cs" />
+    <Compile Include="MCDzienny\CmdSummonSpawn.cs" />
+    <Compile Include="MCDzienny\CmdTake.cs" />
+    <Compile Include="MCDzienny\CmdTColor.cs" />
+    <Compile Include="MCDzienny\CmdTeam.cs" />
+    <Compile Include="MCDzienny\CmdTempBan.cs" />
+    <Compile Include="MCDzienny\CmdTempMute.cs" />
+    <Compile Include="MCDzienny\CmdTest.cs" />
+    <Compile Include="MCDzienny\CmdTest3.cs" />
+    <Compile Include="MCDzienny\CmdText.cs" />
+    <Compile Include="MCDzienny\CmdTime.cs" />
+    <Compile Include="MCDzienny\CmdTimedMessage.cs" />
+    <Compile Include="MCDzienny\CmdTimeleft.cs" />
+    <Compile Include="MCDzienny\CmdTimer.cs" />
+    <Compile Include="MCDzienny\CmdTips.cs" />
+    <Compile Include="MCDzienny\CmdTitle.cs" />
+    <Compile Include="MCDzienny\CmdTitleColor.cs" />
+    <Compile Include="MCDzienny\CmdTnt.cs" />
+    <Compile Include="MCDzienny\CmdTopten.cs" />
+    <Compile Include="MCDzienny\CmdTp.cs" />
+    <Compile Include="MCDzienny\CmdTpZone.cs" />
+    <Compile Include="MCDzienny\CmdTree.cs" />
+    <Compile Include="MCDzienny\CmdTrust.cs" />
+    <Compile Include="MCDzienny\CmdUnban.cs" />
+    <Compile Include="MCDzienny\CmdUnbanip.cs" />
+    <Compile Include="MCDzienny\CmdUndo.cs" />
+    <Compile Include="MCDzienny\CmdUnload.cs" />
+    <Compile Include="MCDzienny\CmdUnloaded.cs" />
+    <Compile Include="MCDzienny\CmdUpdate.cs" />
+    <Compile Include="MCDzienny\CmdView.cs" />
+    <Compile Include="MCDzienny\CmdViewRanks.cs" />
+    <Compile Include="MCDzienny\CmdVoice.cs" />
+    <Compile Include="MCDzienny\CmdVote.cs" />
+    <Compile Include="MCDzienny\CmdVoteBan.cs" />
+    <Compile Include="MCDzienny\CmdVoteKick.cs" />
+    <Compile Include="MCDzienny\CmdWall.cs" />
+    <Compile Include="MCDzienny\CmdWeather.cs" />
+    <Compile Include="MCDzienny\CmdWelcome.cs" />
+    <Compile Include="MCDzienny\CmdWhisper.cs" />
+    <Compile Include="MCDzienny\CmdWhitelist.cs" />
+    <Compile Include="MCDzienny\CmdWhoip.cs" />
+    <Compile Include="MCDzienny\CmdWhois.cs" />
+    <Compile Include="MCDzienny\CmdWhowas.cs" />
+    <Compile Include="MCDzienny\CmdWomid.cs" />
+    <Compile Include="MCDzienny\CmdWrite.cs" />
+    <Compile Include="MCDzienny\CmdXban.cs" />
+    <Compile Include="MCDzienny\CmdXundo.cs" />
+    <Compile Include="MCDzienny\CmdZombiemob.cs" />
+    <Compile Include="MCDzienny\CmdZombies.cs" />
+    <Compile Include="MCDzienny\CmdZone.cs" />
+    <Compile Include="MCDzienny\CmdZoneShow.cs" />
+    <Compile Include="MCDzienny\ColorHelper.cs" />
+    <Compile Include="MCDzienny\Command.cs" />
+    <Compile Include="MCDzienny\CommandActionPair.cs" />
+    <Compile Include="MCDzienny\CommandBlock.cs" />
+    <Compile Include="MCDzienny\CommandElement.cs" />
+    <Compile Include="MCDzienny\CommandList.cs" />
+    <Compile Include="MCDzienny\CommandScope.cs" />
+    <Compile Include="MCDzienny\Commands\CmdEightBall.cs" />
+    <Compile Include="MCDzienny\Commands\CmdFacepalm.cs" />
+    <Compile Include="MCDzienny\Commands\CmdHighfive.cs" />
+    <Compile Include="MCDzienny\Commands\CmdPlace.cs" />
+    <Compile Include="MCDzienny\Commands\CmdPoke.cs" />
+    <Compile Include="MCDzienny\Commands\CmdQuad.cs" />
+    <Compile Include="MCDzienny\Commands\CmdRemote.cs" />
+    <Compile Include="MCDzienny\Commands\CmdRenameLvl.cs" />
+    <Compile Include="MCDzienny\Commands\CmdTexture.cs" />
+    <Compile Include="MCDzienny\Commands\CmdTextures.cs" />
+    <Compile Include="MCDzienny\Commands\CmdTriangle.cs" />
+    <Compile Include="MCDzienny\Commands\CmdVoteAbort.cs" />
+    <Compile Include="MCDzienny\Communication\Model.cs" />
+    <Compile Include="MCDzienny\Communication\Packets.cs" />
+    <Compile Include="MCDzienny\ConvertDat.cs" />
+    <Compile Include="MCDzienny\Core.cs" />
+    <Compile Include="MCDzienny\CpeApi\MessageHandler.cs" />
+    <Compile Include="MCDzienny\CpeApi\V1.cs" />
+    <Compile Include="MCDzienny\Cpe\Support.cs" />
+    <Compile Include="MCDzienny\Cpe\V1.cs" />
+    <Compile Include="MCDzienny\CTFGame.cs" />
+    <Compile Include="MCDzienny\CustomListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\CustomRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\CustomSettingsProvider.cs" />
+    <Compile Include="MCDzienny\Database\DBManager.cs" />
+    <Compile Include="MCDzienny\Database\DBPlayerColumns.cs" />
+    <Compile Include="MCDzienny\DBInterface.cs" />
+    <Compile Include="MCDzienny\DisconnectionReason.cs" />
+    <Compile Include="MCDzienny\DrawArgs.cs" />
+    <Compile Include="MCDzienny\Entity.cs" />
+    <Compile Include="MCDzienny\ExtendedDrawArgs.cs" />
+    <Compile Include="MCDzienny\FindReference.cs" />
+    <Compile Include="MCDzienny\Games\GameBase.cs" />
+    <Compile Include="MCDzienny\Games\Race.cs" />
+    <Compile Include="MCDzienny\Group.cs" />
+    <Compile Include="MCDzienny\GrpCommands.cs" />
+    <Compile Include="MCDzienny\GuiSettingsProvider.cs" />
+    <Compile Include="MCDzienny\Gui\BadWordsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\ColorChatSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\CreateMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\LavaProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\PopUpMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\PropertyWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\RemoteAccess\ChangeAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\RemoteAccess\NewAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\RemoteAccess\RemoveAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\Tools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\UpdateWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\Util\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\WhiteListEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Gui\Wpf\ColorChat.cs" />
+    <Compile Include="MCDzienny\Gui\ZombieProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Heartbeat.cs" />
+    <Compile Include="MCDzienny\HttpUtil.cs" />
+    <Compile Include="MCDzienny\HumanoidMob.cs" />
+    <Compile Include="MCDzienny\Id.cs" />
+    <Compile Include="MCDzienny\InfectionSystem\AnnoncementType.cs" />
+    <Compile Include="MCDzienny\InfectionSystem\AnnounceWinnersEventArgs.cs" />
+    <Compile Include="MCDzienny\InfectionSystem\EventExt.cs" />
+    <Compile Include="MCDzienny\InfectionSystem\InfectionCommands.cs" />
+    <Compile Include="MCDzienny\InfectionSystem\InfectionMaps.cs" />
+    <Compile Include="MCDzienny\InfectionSystem\InfectionSystem.cs" />
+    <Compile Include="MCDzienny\InfectionSystem\InfectionTiers.cs" />
+    <Compile Include="MCDzienny\InfectionSystem\InfectionUtils.cs" />
+    <Compile Include="MCDzienny\InfectionSystem\PayRewardEventArgs.cs" />
+    <Compile Include="MCDzienny\InfectionSystem\RoundStartEventArgs.cs" />
+    <Compile Include="MCDzienny\InteliSys.cs" />
+    <Compile Include="MCDzienny\IRCBot.cs" />
+    <Compile Include="MCDzienny\IronChallengeType.cs" />
+    <Compile Include="MCDzienny\JumpAttackAI.cs" />
+    <Compile Include="MCDzienny\Language.cs" />
+    <Compile Include="MCDzienny\Lang\Command.cs" />
+    <Compile Include="MCDzienny\Lang\CommandName.cs" />
+    <Compile Include="MCDzienny\Lang\LavaSystem.cs" />
+    <Compile Include="MCDzienny\Lang\Level.cs" />
+    <Compile Include="MCDzienny\Lang\Player.cs" />
+    <Compile Include="MCDzienny\Lang\Store.cs" />
+    <Compile Include="MCDzienny\LavaSettingsProvider.cs" />
+    <Compile Include="MCDzienny\LavaState.cs" />
+    <Compile Include="MCDzienny\LavaSystem.cs" />
+    <Compile Include="MCDzienny\Level.cs" />
+    <Compile Include="MCDzienny\LevelCollection.cs" />
+    <Compile Include="MCDzienny\LevelEventArgs.cs" />
+    <Compile Include="MCDzienny\LevelFileInfo.cs" />
+    <Compile Include="MCDzienny\LevelPermission.cs" />
+    <Compile Include="MCDzienny\LevelProperties.cs" />
+    <Compile Include="MCDzienny\Levels\CommandBlockCollection.cs" />
+    <Compile Include="MCDzienny\Levels\Effects\Environment.cs" />
+    <Compile Include="MCDzienny\Levels\Effects\EnvironmentHandler.cs" />
+    <Compile Include="MCDzienny\Levels\Effects\EnvironmentItem.cs" />
+    <Compile Include="MCDzienny\Levels\Effects\EnvironmentType.cs" />
+    <Compile Include="MCDzienny\Levels\Effects\RgbColor.cs" />
+    <Compile Include="MCDzienny\Levels\Effects\Texture.cs" />
+    <Compile Include="MCDzienny\Levels\Effects\TextureHandler.cs" />
+    <Compile Include="MCDzienny\Levels\Effects\WeatherHandler.cs" />
+    <Compile Include="MCDzienny\Levels\Info\LevelInfo.cs" />
+    <Compile Include="MCDzienny\Levels\Info\LevelInfoConverter.cs" />
+    <Compile Include="MCDzienny\Levels\Info\LevelInfoManager.cs" />
+    <Compile Include="MCDzienny\Levels\Info\LevelInfoRaw.cs" />
+    <Compile Include="MCDzienny\Levels\Info\LevelInfoRawItem.cs" />
+    <Compile Include="MCDzienny\Levels\LevelReaderV2.cs" />
+    <Compile Include="MCDzienny\Levels\MapSettings.cs" />
+    <Compile Include="MCDzienny\LogFile.cs" />
+    <Compile Include="MCDzienny\Logger.cs" />
+    <Compile Include="MCDzienny\MapChangeEventArgs.cs" />
+    <Compile Include="MCDzienny\MapGenerator.cs" />
+    <Compile Include="MCDzienny\MapSettingsManager.cs" />
+    <Compile Include="MCDzienny\MapThemeType.cs" />
+    <Compile Include="MCDzienny\MapType.cs" />
+    <Compile Include="MCDzienny\Messages.cs" />
+    <Compile Include="MCDzienny\Misc\CaseAction.cs" />
+    <Compile Include="MCDzienny\Misc\CaseActionList.cs" />
+    <Compile Include="MCDzienny\Misc\DataGridViewEnumerated.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Misc\DirectoryUtil.cs" />
+    <Compile Include="MCDzienny\Misc\FileUtil.cs" />
+    <Compile Include="MCDzienny\Misc\FlagsCollection32.cs" />
+    <Compile Include="MCDzienny\Misc\MCColor.cs" />
+    <Compile Include="MCDzienny\Misc\Message.cs" />
+    <Compile Include="MCDzienny\Misc\PerPixelAlphaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Misc\PlayersFlags.cs" />
+    <Compile Include="MCDzienny\Misc\PortIsClosed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Misc\PortIsOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Misc\Ref.cs" />
+    <Compile Include="MCDzienny\Misc\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Misc\SplashScreen2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Misc\StringExtension.cs" />
+    <Compile Include="MCDzienny\Misc\SyntaxCaseSolver.cs" />
+    <Compile Include="MCDzienny\Misc\Win32.cs" />
+    <Compile Include="MCDzienny\Mob.cs" />
+    <Compile Include="MCDzienny\Mode.cs" />
+    <Compile Include="MCDzienny\MovingObjectPosition.cs" />
+    <Compile Include="MCDzienny\MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\MultiMessages\KeyStringArrayCollection.cs" />
+    <Compile Include="MCDzienny\MultiMessages\MessagesCollection.cs" />
+    <Compile Include="MCDzienny\MultiMessages\MessagesManager.cs" />
+    <Compile Include="MCDzienny\MySQL.cs" />
+    <Compile Include="MCDzienny\Notification\Channel.cs" />
+    <Compile Include="MCDzienny\Notification\DevMessages.cs" />
+    <Compile Include="MCDzienny\Notification\Item.cs" />
+    <Compile Include="MCDzienny\Notification\ItemCollection.cs" />
+    <Compile Include="MCDzienny\Notification\Priority.cs" />
+    <Compile Include="MCDzienny\OwnedBlockInfo.cs" />
+    <Compile Include="MCDzienny\PidgeonLogger.cs" />
+    <Compile Include="MCDzienny\Player.cs" />
+    <Compile Include="MCDzienny\PlayerBot.cs" />
+    <Compile Include="MCDzienny\PlayerCollection.cs" />
+    <Compile Include="MCDzienny\PlayerEventArgs.cs" />
+    <Compile Include="MCDzienny\PlayerJoinedEventArgs.cs" />
+    <Compile Include="MCDzienny\PlayerList.cs" />
+    <Compile Include="MCDzienny\PlayerPosition.cs" />
+    <Compile Include="MCDzienny\PluginControlAddPlugin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\PluginControlRemovePlugin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Plugins\AddPlugin.cs" />
+    <Compile Include="MCDzienny\Plugins\AvailablePlugin.cs" />
+    <Compile Include="MCDzienny\Plugins\AvailablePluginCollection.cs" />
+    <Compile Include="MCDzienny\Plugins\ColumnWidthAdjustmentConverter.cs" />
+    <Compile Include="MCDzienny\Plugins\Example.cs" />
+    <Compile Include="MCDzienny\Plugins\GuiExample.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Plugins\GuiImportFromDat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Plugins\HelperExt.cs" />
+    <Compile Include="MCDzienny\Plugins\ImportFromDat.cs" />
+    <Compile Include="MCDzienny\Plugins\IPluginHost.cs" />
+    <Compile Include="MCDzienny\Plugins\KeyboardShortcuts\CpeHotKeyInfo.cs" />
+    <Compile Include="MCDzienny\Plugins\KeyboardShortcuts\ShortcutInfo.cs" />
+    <Compile Include="MCDzienny\Plugins\KeyboardShortcuts\WpfToLwjglKeyMap.cs" />
+    <Compile Include="MCDzienny\Plugins\mainGUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Plugins\Plgn.cs" />
+    <Compile Include="MCDzienny\Plugins\Plugin.cs" />
+    <Compile Include="MCDzienny\Plugins\KeyboardShortcuts\PluginKeyboardShortcuts.cs" />
+    <Compile Include="MCDzienny\Plugins\KeyboardShortcuts\PluginKeyboardShortcutsGui.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MCDzienny\Plugins\KeyboardShortcuts\PluginKeyboardShortcutsGui2.cs" />
+    <Compile Include="MCDzienny\Plugins\PluginManager.cs" />
+    <Compile Include="MCDzienny\Plugins\RemovePlugin.cs" />
+    <Compile Include="MCDzienny\Plugins\stuffWithGui.cs" />
+    <Compile Include="MCDzienny\Plugins\versionInfo.cs" />
+    <Compile Include="MCDzienny\Plugins\WidthAdjustmentConverter.cs" />
+    <Compile Include="MCDzienny\Position.cs" />
+    <Compile Include="MCDzienny\PositionChangedEventArgs.cs" />
+    <Compile Include="MCDzienny\RemoteAccess\AccountsCollection.cs" />
+    <Compile Include="MCDzienny\RemoteAccess\BanListManager.cs" />
+    <Compile Include="MCDzienny\RemoteAccess\HandleReceive.cs" />
+    <Compile Include="MCDzienny\RemoteAccess\HttpServer.cs" />
+    <Compile Include="MCDzienny\RemoteAccess\Listener.cs" />
+    <Compile Include="MCDzienny\RemoteAccess\ReceiveCodes.cs" />
+    <Compile Include="MCDzienny\RemoteAccess\RemoteClient.cs" />
+    <Compile Include="MCDzienny\RemoteAccess\SendCodes.cs" />
+    <Compile Include="MCDzienny\RemoteAccess\SendManager.cs" />
+    <Compile Include="MCDzienny\RemoteAccess\SimpleAccountManager.cs" />
+    <Compile Include="MCDzienny\Report.cs" />
+    <Compile Include="MCDzienny\ReviewQueue.cs" />
+    <Compile Include="MCDzienny\ScoreSystem.cs" />
+    <Compile Include="MCDzienny\Scripting.cs" />
+    <Compile Include="MCDzienny\Script\CompilerManager.cs" />
+    <Compile Include="MCDzienny\Script\CompilerOptionsBuilder.cs" />
+    <Compile Include="MCDzienny\Script\NetFrameworkVersion.cs" />
+    <Compile Include="MCDzienny\Script\NetFrameworkVersionExtensions.cs" />
+    <Compile Include="MCDzienny\Server.cs" />
+    <Compile Include="MCDzienny\ServerProperties.cs" />
+    <Compile Include="MCDzienny\SettingsExtended\SettingsMediator.cs" />
+    <Compile Include="MCDzienny\SettingsExtended\SettingsPropertyExtended.cs" />
+    <Compile Include="MCDzienny\SettingsFrame\ConcreteSettings.cs" />
+    <Compile Include="MCDzienny\SettingsFrame\ConcreteSettingsProvider.cs" />
+    <Compile Include="MCDzienny\SettingsFrame\DefaultValueAttribute.cs" />
+    <Compile Include="MCDzienny\SettingsFrame\SettingAttribute.cs" />
+    <Compile Include="MCDzienny\SettingsFrame\SettingsFrame.cs" />
+    <Compile Include="MCDzienny\SettingsFrame\SettingsFrameBase.cs" />
+    <Compile Include="MCDzienny\SettingsFrame\SettingsPathAttribute.cs" />
+    <Compile Include="MCDzienny\SettingsFrame\SettingsProperty.cs" />
+    <Compile Include="MCDzienny\SettingsFrame\SettingsPropertyElement.cs" />
+    <Compile Include="MCDzienny\SettingsFrame\SettingsProvider.cs" />
+    <Compile Include="MCDzienny\SettingsFrame\Test.cs" />
+    <Compile Include="MCDzienny\Settings\ChatFilterSettings.cs" />
+    <Compile Include="MCDzienny\Settings\GeneralSettings.cs" />
+    <Compile Include="MCDzienny\Settings\GuiSettings.cs" />
+    <Compile Include="MCDzienny\Settings\InfectionSettings.cs" />
+    <Compile Include="MCDzienny\Settings\LavaSettings.cs" />
+    <Compile Include="MCDzienny\Settings\RemoteSettings.cs" />
+    <Compile Include="MCDzienny\SimpleKeyValueManager\SimpleKeyValueManager.cs" />
+    <Compile Include="MCDzienny\SQLite.cs" />
+    <Compile Include="MCDzienny\SQLiteFront.cs" />
+    <Compile Include="MCDzienny\SQLiteMono.cs" />
+    <Compile Include="MCDzienny\Store.cs" />
+    <Compile Include="MCDzienny\StoreSystem\Color.cs" />
+    <Compile Include="MCDzienny\StoreSystem\Disinfect.cs" />
+    <Compile Include="MCDzienny\StoreSystem\Farewell.cs" />
+    <Compile Include="MCDzienny\StoreSystem\ICommand.cs" />
+    <Compile Include="MCDzienny\StoreSystem\Item.cs" />
+    <Compile Include="MCDzienny\StoreSystem\ItemsCollection.cs" />
+    <Compile Include="MCDzienny\StoreSystem\ScriptLoader.cs" />
+    <Compile Include="MCDzienny\StoreSystem\Store.cs" />
+    <Compile Include="MCDzienny\StoreSystem\Title.cs" />
+    <Compile Include="MCDzienny\StoreSystem\Welcome.cs" />
+    <Compile Include="MCDzienny\StoreSystem\ZombieScriptLoader.cs" />
+    <Compile Include="MCDzienny\StoreSystem\ZombieStore.cs" />
+    <Compile Include="MCDzienny\Team.cs" />
+    <Compile Include="MCDzienny\test.cs" />
+    <Compile Include="MCDzienny\TextureManager.cs" />
+    <Compile Include="MCDzienny\TierSystem.cs" />
+    <Compile Include="MCDzienny\Trader.cs" />
+    <Compile Include="MCDzienny\UndoBufferCollection.cs" />
+    <Compile Include="MCDzienny\Update.cs" />
+    <Compile Include="MCDzienny\UpdateHash.cs" />
+    <Compile Include="MCDzienny\Updater.cs" />
+    <Compile Include="MCDzienny\Updaters\Hash.cs" />
+    <Compile Include="MCDzienny\Updaters\SupplementaryUpdate.cs" />
+    <Compile Include="MCDzienny\Utils.cs" />
+    <Compile Include="MCDzienny\ValueExplicitPair.cs" />
+    <Compile Include="MCDzienny\Vector3.cs" />
+    <Compile Include="MCDzienny\Vector3F.cs" />
+    <Compile Include="MCDzienny\VersionNumber.cs" />
+    <Compile Include="MCDzienny\VipList.cs" />
+    <Compile Include="MCDzienny\VotingSystem.cs" />
+    <Compile Include="MCDzienny\Zombie.cs" />
+    <Compile Include="MCDzienny_\Gui\Program.cs" />
+    <Compile Include="MonoTorrent\Check.cs" />
+    <Compile Include="MonoTorrent\Client\MainLoop.cs" />
+    <Compile Include="MonoTorrent\Client\MainLoopJob.cs" />
+    <Compile Include="MonoTorrent\Client\MainLoopResult.cs" />
+    <Compile Include="MonoTorrent\Client\MainLoopTask.cs" />
+    <Compile Include="MonoTorrent\Client\TimeoutTask.cs" />
+    <Compile Include="MonoTorrent\Common\Cache.cs" />
+    <Compile Include="MonoTorrent\Common\Direction.cs" />
+    <Compile Include="MonoTorrent\Common\ICache.cs" />
+    <Compile Include="MonoTorrent\Common\ICacheable.cs" />
+    <Compile Include="MonoTorrent\Common\ListenerStatus.cs" />
+    <Compile Include="MonoTorrent\Common\PeerConnectionEvent.cs" />
+    <Compile Include="MonoTorrent\Common\PeerListType.cs" />
+    <Compile Include="MonoTorrent\Common\PeerStatus.cs" />
+    <Compile Include="MonoTorrent\Common\PieceEvent.cs" />
+    <Compile Include="MonoTorrent\Common\Priority.cs" />
+    <Compile Include="MonoTorrent\Common\SynchronizedCache.cs" />
+    <Compile Include="MonoTorrent\Common\TorrentEvent.cs" />
+    <Compile Include="MonoTorrent\Common\TorrentException.cs" />
+    <Compile Include="MonoTorrent\Common\TorrentState.cs" />
+    <Compile Include="MonoTorrent\Common\TrackerState.cs" />
+    <Compile Include="MonoTorrent\DhtState.cs" />
+    <Compile Include="MyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SynchronizedDictionary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.ico" />
+    <Content Include="FodyWeavers.xml" />
+    <Page Include="MCDzienny\Gui\Wpf\ColorChat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MCDzienny\Plugins\KeyboardShortcuts\PluginKeyboardShortcutsGui2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.1.29.4\build\portable-net+sl+win+wpa+wp\Fody.targets" Condition="Exists('..\packages\Fody.1.29.4\build\portable-net+sl+win+wpa+wp\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.1.29.4\build\portable-net+sl+win+wpa+wp\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.1.29.4\build\portable-net+sl+win+wpa+wp\Fody.targets'))" />
+  </Target>
+</Project>

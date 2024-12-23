@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+                id="root"
+                xmlns="">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="textBox13.Text" xml:space="preserve"><value>Bad words filter checks messages for bad words.
+
+Detection level - defines the sensitivity of the filter.
+White List - works only for High detection level. The words that are on the list are skipped by the filter.</value></data>
+    <data name="textBox12.Text" xml:space="preserve"><value>Character repetition filter in case of a long sequence of same characters it removes the excess.
+
+Max chars - defines the allowed amount of same chars in a row. For example if the value is equal to 3 and someone tries to write "ooooooo", the message will be shortened to "ooo".
+Max illegal groups - if there are more char groups that violates the max chars limit than defined by this setting, then the chars won't be shortened. Instead, the user may get warned or the message won't be displayed at all.</value></data>
+</root>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Weavers>
+  <Costura>
+    <IncludeAssemblies>
+	  log4net
+	  Newtonsoft.Json
+	  SuperSocket.Common
+	  SuperSocket.Facility
+	  SuperSocket.SocketBase
+	  SuperSocket.SocketEngine
+	  SuperWebSocket
+	  System.Threading
+	</IncludeAssemblies>
+  </Costura>
+</Weavers>

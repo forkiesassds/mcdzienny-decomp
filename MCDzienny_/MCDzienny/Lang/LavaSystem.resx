@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+                id="root"
+                xmlns="">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="VoteForNextMap" xml:space="preserve"><value>Vote for the next map</value></data>
+    <data name="LavaStateCalm" xml:space="preserve"><value>%bLava stays %aCALM%b in this round.</value></data>
+    <data name="LavaStateWild" xml:space="preserve"><value>%bLava gets %cWILD%b in this round!!!</value></data>
+    <data name="MapAuthor" xml:space="preserve"><value>%d* %fAuthor:%b {0}</value></data>
+    <data name="LavaStateFurious" xml:space="preserve"><value>%bLava becomes %cFURIOUS%b in this round.</value></data>
+    <data name="Voted1" xml:space="preserve"><value>You have voted for 1st map.</value></data>
+    <data name="Voted3" xml:space="preserve"><value>You have voted for 3rd map.</value></data>
+    <data name="Voted2" xml:space="preserve"><value>You have voted for 2nd map.</value></data>
+    <data name="YouHaveTheHighestRank" xml:space="preserve"><value>You have the highest rank possible.</value></data>
+    <data name="VoteResults2" xml:space="preserve"><value>Map: {0} - {1}, {2} - {3}, {4} - {5} votes.</value></data>
+    <data name="MapRatingResults" xml:space="preserve"><value>%aRating for this map is:%c {0} %alikes,%c {1} %adislikes.</value></data>
+    <data name="VoteResults" xml:space="preserve"><value>Results of voting:</value></data>
+    <data name="VoteOptions" xml:space="preserve"><value>Write %c1{0} for {1}, %c2{0} for {2}, %c3{0} for {3}</value></data>
+    <data name="MapRatingTip" xml:space="preserve"><value>%a(You can rate this map by typing /like or /dislike)</value></data>
+    <data name="RewardMessageAboveSea" xml:space="preserve"><value>You gained {0} {1}.</value></data>
+    <data name="RewardMessageBelowSea" xml:space="preserve"><value>You gained {0} {1}. {2}</value></data>
+    <data name="WarningAlreadyVoted" xml:space="preserve"><value>You have already voted. Wait a moment till the end of voting.</value></data>
+    <data name="VoteTip" xml:space="preserve"><value>In order to vote write 1 or 2 or 3.</value></data>
+    <data name="MapNext" xml:space="preserve"><value>The next map is: {0}</value></data>
+    <data name="MapName" xml:space="preserve"><value>%d* %fMap name:%b {0}</value></data>
+    <data name="RewardMessageBelowSea2" xml:space="preserve"><value>You were rewarded {0} less than normal because you were below the Sea Level.</value></data>
+    <data name="LavaStateDisturbed" xml:space="preserve"><value>%bLava is %9DISTURBED%b in this round.</value></data>
+    <data name="WarningTooCloseToSpawn" xml:space="preserve"><value>You were too close to the map spawn!! You have to be at least {0} blocks away from spawn point to be the winner.</value></data>
+</root>

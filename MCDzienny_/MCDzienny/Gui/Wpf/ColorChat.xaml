@@ -1,0 +1,5 @@
+﻿<UserControl x:Class="MCDzienny.Gui.Wpf.ColorChat" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:wpf="clr-namespace:MCDzienny.Gui.Wpf;assembly=MCDzienny_">
+	<Grid>
+		<RichTextBox Name="colorChat" Height="300" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" VerticalScrollBarVisibility="Auto" Background="#88000000" IsReadOnly="True" />
+	</Grid>
+</UserControl>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{B2EDE7D0-441D-47E9-AC61-6794FEF68574}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Updater</RootNamespace>
+    <AssemblyName>Updater</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <StartupObject>Updater.Program</StartupObject>
+    <TargetFrameworkProfile />
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Build\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>4</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\Build\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>4</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Updater\Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Updater\Properties\Resources.cs" />
+    <Compile Include="Updater\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Updater\Program.cs" />
+    <Compile Include="Updater\Properties\Resources.cs" />
+    <Compile Include="Updater\UpdaterWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Updater\UpdaterWindow.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Updater\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
