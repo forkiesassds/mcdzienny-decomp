@@ -78,7 +78,7 @@
     <EmbeddedResource Include="MCDzienny\Lang\Player.resx">
       <DependentUpon>Player.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MCDzienny\Lang\Player.xpl.resx" LogicalName="MCDzienny.Lang.Player.xpl.resx" />
+    <EmbeddedResource Include="MCDzienny\Lang\Player.xpl.resx" LogicalName="MCDzienny.Lang.Player.xpl.resources" />
     <EmbeddedResource Include="MCDzienny\Lang\Store.resx">
       <DependentUpon>Store.cs</DependentUpon>
     </EmbeddedResource>
