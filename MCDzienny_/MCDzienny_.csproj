@@ -6,7 +6,7 @@
     <ProjectGuid>{B2EDE7D0-441D-47E9-AC61-6794FEF68571}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MCDzienny_</RootNamespace>
+    <RootNamespace>MCDzienny</RootNamespace>
     <AssemblyName>MCDzienny_</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -78,7 +78,7 @@
     <EmbeddedResource Include="MCDzienny\Lang\Player.resx">
       <DependentUpon>Player.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MCDzienny\Lang\Player.xpl.resx" />
+    <EmbeddedResource Include="MCDzienny\Lang\Player.xpl.resx" LogicalName="MCDzienny.Lang.Player.xpl.resx" />
     <EmbeddedResource Include="MCDzienny\Lang\Store.resx">
       <DependentUpon>Store.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,9 +86,9 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="icon_ok.png" LogicalName="icon_ok.png" />
-    <EmbeddedResource Include="icon_wrong.png" LogicalName="icon_wrong.png" />
-    <EmbeddedResource Include="mcdzienny.ico" LogicalName="mcdzienny.ico" />
+    <EmbeddedResource Include="icon_ok.png" />
+    <EmbeddedResource Include="icon_wrong.png" />
+    <EmbeddedResource Include="mcdzienny.ico" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

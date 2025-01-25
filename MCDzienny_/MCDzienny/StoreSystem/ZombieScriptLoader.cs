@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text;
-using MCDzienny_.Properties;
+using MCDzienny.Properties;
 using Microsoft.CSharp;
 
 namespace MCDzienny.StoreSystem
