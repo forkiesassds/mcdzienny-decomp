@@ -15,7 +15,7 @@ namespace MCDzienny.Misc
             Left = Screen.GetWorkingArea(this).Width / 2 - bitmap.Width / 2;
             Top = Screen.GetWorkingArea(this).Height / 2 - bitmap.Height / 2;
             Graphics val = Graphics.FromImage(bitmap);
-            Font val2 = new Font("Tahoma", 12f, (FontStyle)1);
+            Font val2 = new Font("Tahoma", 12f, FontStyle.Bold);
             val.SmoothingMode = (SmoothingMode)4;
             val.DrawString("Version: " + Server.Version, val2, new SolidBrush(Color.White), 36f, bitmap.Height - 45);
             base.SetBitmap(bitmap);

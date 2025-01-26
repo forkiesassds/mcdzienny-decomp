@@ -75,7 +75,7 @@ namespace MCDzienny.Plugins
             intervalTextBox.Size = new Size(204, 20);
             intervalTextBox.TabIndex = 3;
             AutoScaleDimensions = new SizeF(6f, 13f);
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(284, 262);
             Controls.Add(intervalTextBox);
             Controls.Add(label2);

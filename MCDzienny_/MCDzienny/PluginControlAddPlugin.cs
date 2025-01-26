@@ -46,12 +46,12 @@ namespace MCDzienny
             buttonAddPlugin = new Button();
             buttonClearText = new Button();
             SuspendLayout();
-            textBoxPlugin.Anchor = (AnchorStyles)15;
+            textBoxPlugin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBoxPlugin.BackColor = Color.White;
             textBoxPlugin.Location = new Point(8, 31);
             textBoxPlugin.Multiline = true;
             textBoxPlugin.Name = "textBoxPlugin";
-            textBoxPlugin.ScrollBars = (ScrollBars)3;
+            textBoxPlugin.ScrollBars = ScrollBars.Both;
             textBoxPlugin.Size = new Size(473, 313);
             textBoxPlugin.TabIndex = 0;
             label1.AutoSize = true;
@@ -60,7 +60,7 @@ namespace MCDzienny
             label1.Size = new Size(135, 13);
             label1.TabIndex = 3;
             label1.Text = "Paste a plugin code below:";
-            buttonAddPlugin.Anchor = (AnchorStyles)6;
+            buttonAddPlugin.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             buttonAddPlugin.Location = new Point(8, 350);
             buttonAddPlugin.Name = "buttonAddPlugin";
             buttonAddPlugin.Size = new Size(75, 23);
@@ -68,7 +68,7 @@ namespace MCDzienny
             buttonAddPlugin.Text = "Add Plugin";
             buttonAddPlugin.UseVisualStyleBackColor = true;
             buttonAddPlugin.Click += buttonAddPlugin_Click;
-            buttonClearText.Anchor = (AnchorStyles)10;
+            buttonClearText.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             buttonClearText.Location = new Point(406, 350);
             buttonClearText.Name = "buttonClearText";
             buttonClearText.Size = new Size(75, 23);

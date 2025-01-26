@@ -189,7 +189,7 @@ namespace MCDzienny.Gui
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             SuspendLayout();
-            comboBoxWidth.DropDownStyle = (ComboBoxStyle)2;
+            comboBoxWidth.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxWidth.FormattingEnabled = true;
             comboBoxWidth.Items.AddRange(new object[10]
             {
@@ -235,7 +235,7 @@ namespace MCDzienny.Gui
             textMaxMaps.Size = new Size(54, 20);
             textMaxMaps.TabIndex = 12;
             textMaxMaps.Text = "4096";
-            textMaxMaps.TextAlign = (HorizontalAlignment)1;
+            textMaxMaps.TextAlign = HorizontalAlignment.Center;
             label10.AutoSize = true;
             label10.Location = new Point(166, 179);
             label10.MaximumSize = new Size(230, 0);
@@ -276,7 +276,7 @@ namespace MCDzienny.Gui
             textRamRequired.Size = new Size(68, 20);
             textRamRequired.TabIndex = 9;
             textRamRequired.Text = "0,25";
-            textRamRequired.TextAlign = (HorizontalAlignment)1;
+            textRamRequired.TextAlign = HorizontalAlignment.Center;
             label6.AutoSize = true;
             label6.Location = new Point(31, 127);
             label6.Name = "label6";
@@ -295,7 +295,7 @@ namespace MCDzienny.Gui
             label4.Size = new Size(36, 13);
             label4.TabIndex = 6;
             label4.Text = "Depth";
-            comboBoxDepth.DropDownStyle = (ComboBoxStyle)2;
+            comboBoxDepth.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxDepth.FormattingEnabled = true;
             comboBoxDepth.Items.AddRange(new object[10]
             {
@@ -312,7 +312,7 @@ namespace MCDzienny.Gui
             label3.Size = new Size(38, 13);
             label3.TabIndex = 4;
             label3.Text = "Height";
-            comboBoxHeight.DropDownStyle = (ComboBoxStyle)2;
+            comboBoxHeight.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxHeight.FormattingEnabled = true;
             comboBoxHeight.Items.AddRange(new object[10]
             {
@@ -337,15 +337,15 @@ namespace MCDzienny.Gui
             label1.TabIndex = 1;
             label1.Text = "This tool calculates the approx. RAM usage for a map of given dimensions.";
             AutoScaleDimensions = new SizeF(6f, 13f);
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(292, 269);
             Controls.Add(tabControl1);
-            FormBorderStyle = (FormBorderStyle)2;
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Tools";
             ShowIcon = false;
-            StartPosition = (FormStartPosition)4;
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Tools";
             FormClosing += Tools_FormClosing;
             tabControl1.ResumeLayout(false);

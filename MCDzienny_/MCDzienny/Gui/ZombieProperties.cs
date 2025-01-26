@@ -34,7 +34,7 @@ namespace MCDzienny.Gui
             //IL_005f: Expected O, but got Unknown
             SuspendLayout();
             AutoScaleDimensions = new SizeF(6f, 13f);
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(451, 457);
             Name = "ZombieProperties";
             Text = "ZombieProperties";

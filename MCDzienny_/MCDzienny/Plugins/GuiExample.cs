@@ -33,7 +33,7 @@ namespace MCDzienny.Plugins
             labelMessage = new Label();
             SuspendLayout();
             labelMessage.AutoSize = true;
-            labelMessage.Font = new Font("Microsoft Sans Serif", 12f, (FontStyle)1, (GraphicsUnit)3, 238);
+            labelMessage.Font = new Font("Microsoft Sans Serif", 12f, FontStyle.Bold, GraphicsUnit.Point, 238);
             labelMessage.ForeColor = Color.Brown;
             labelMessage.Location = new Point(173, 163);
             labelMessage.Name = "labelMessage";
@@ -41,7 +41,7 @@ namespace MCDzienny.Plugins
             labelMessage.TabIndex = 0;
             labelMessage.Text = "Hello World!";
             AutoScaleDimensions = new SizeF(6f, 13f);
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             Controls.Add(labelMessage);
             Name = "GuiExample";

@@ -48,7 +48,7 @@ namespace MCDzienny.Gui
             //IL_0066: Expected O, but got Unknown
             SuspendLayout();
             AutoScaleDimensions = new SizeF(6f, 13f);
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(430, 498);
             Name = "LavaProperties";
             ShowIcon = false;

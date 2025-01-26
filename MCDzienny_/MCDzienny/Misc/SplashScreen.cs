@@ -39,7 +39,7 @@ namespace MCDzienny.Misc
         {
             SuspendLayout();
             AutoScaleDimensions = new SizeF(6f, 13f);
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BackgroundImage = Resources.splashScreen;
             ClientSize = new Size(520, 260);
@@ -47,7 +47,7 @@ namespace MCDzienny.Misc
             Name = "SplashScreen";
             ShowIcon = false;
             ShowInTaskbar = false;
-            StartPosition = (FormStartPosition)1;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SplashScreen";
             ResumeLayout(false);
         }

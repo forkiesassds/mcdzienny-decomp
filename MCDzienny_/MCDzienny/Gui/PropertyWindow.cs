@@ -3325,7 +3325,7 @@ namespace MCDzienny.Gui
             tabControl.Controls.Add(tabPage12);
             tabControl.Controls.Add(tabPage14);
             tabControl.Cursor = Cursors.Default;
-            tabControl.Font = new Font("Calibri", 8.25f, 0, (GraphicsUnit)3, 0);
+            tabControl.Font = new Font("Calibri", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
             tabControl.Location = new Point(6, 7);
             tabControl.Name = "tabControl";
             tabControl.SelectedIndex = 0;
@@ -3408,7 +3408,7 @@ namespace MCDzienny.Gui
             toolTip.SetToolTip(
                 descriptionBox,
                 "The MOTD of the server.\nUse \"+hax\" to allow any WoM hack, \"-hax\" to disallow any hacks at all and use \"-fly\" and whatnot to disallow other things.");
-            cmbOpChat.DropDownStyle = (ComboBoxStyle)2;
+            cmbOpChat.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbOpChat.FormattingEnabled = true;
             cmbOpChat.Location = new Point(472, 263);
             cmbOpChat.Name = "cmbOpChat";
@@ -3421,7 +3421,7 @@ namespace MCDzienny.Gui
             lblOpChat.Size = new Size(70, 13);
             lblOpChat.TabIndex = 22;
             lblOpChat.Text = "Op Chat rank:";
-            cmbDefaultRank.DropDownStyle = (ComboBoxStyle)2;
+            cmbDefaultRank.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbDefaultRank.FormattingEnabled = true;
             cmbDefaultRank.Location = new Point(473, 290);
             cmbDefaultRank.Name = "cmbDefaultRank";
@@ -3438,7 +3438,7 @@ namespace MCDzienny.Gui
             lblDefault.Name = "lblDefault";
             lblDefault.Size = new Size(15, 15);
             lblDefault.TabIndex = 10;
-            cmbDefaultColour.DropDownStyle = (ComboBoxStyle)2;
+            cmbDefaultColour.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbDefaultColour.FormattingEnabled = true;
             cmbDefaultColour.Location = new Point(472, 236);
             cmbDefaultColour.Name = "cmbDefaultColour";
@@ -3446,7 +3446,7 @@ namespace MCDzienny.Gui
             cmbDefaultColour.TabIndex = 9;
             toolTip.SetToolTip(cmbDefaultColour, "The colour of the default chat used in the server.\nFor example, when you are asked to select two corners in a cuboid.");
             cmbDefaultColour.SelectedIndexChanged += cmbDefaultColour_SelectedIndexChanged;
-            chkRestart.Appearance = (Appearance)1;
+            chkRestart.Appearance = Appearance.Button;
             chkRestart.AutoSize = true;
             chkRestart.Location = new Point(410, 348);
             chkRestart.Name = "chkRestart";
@@ -3455,7 +3455,7 @@ namespace MCDzienny.Gui
             chkRestart.Text = "Restart when an error occurs";
             chkRestart.UseVisualStyleBackColor = true;
             chkRestart.CheckedChanged += chkRestart_CheckedChanged;
-            chkPublic.Appearance = (Appearance)1;
+            chkPublic.Appearance = Appearance.Button;
             chkPublic.AutoSize = true;
             chkPublic.Location = new Point(165, 145);
             chkPublic.Name = "chkPublic";
@@ -3465,7 +3465,7 @@ namespace MCDzienny.Gui
             toolTip.SetToolTip(chkPublic, "Whether or not the server will appear on the server list.");
             chkPublic.UseVisualStyleBackColor = true;
             chkPublic.CheckedChanged += chkPublic_CheckedChanged;
-            chkAutoload.Appearance = (Appearance)1;
+            chkAutoload.Appearance = Appearance.Button;
             chkAutoload.AutoSize = true;
             chkAutoload.Location = new Point(191, 202);
             chkAutoload.Name = "chkAutoload";
@@ -3475,7 +3475,7 @@ namespace MCDzienny.Gui
             toolTip.SetToolTip(chkAutoload, "Load a map when a user wishes to go to it, and unload empty maps");
             chkAutoload.UseVisualStyleBackColor = true;
             chkAutoload.CheckedChanged += chkAutoload_CheckedChanged;
-            chkWorld.Appearance = (Appearance)1;
+            chkWorld.Appearance = Appearance.Button;
             chkWorld.AutoSize = true;
             chkWorld.Location = new Point(472, 203);
             chkWorld.Name = "chkWorld";
@@ -3590,7 +3590,7 @@ namespace MCDzienny.Gui
             txtName.TabIndex = 0;
             toolTip.SetToolTip(txtName, "The name of the server.\nPick something good!");
             txtName.TextChanged += txtName_TextChanged;
-            ChkTunnels.Appearance = (Appearance)1;
+            ChkTunnels.Appearance = Appearance.Button;
             ChkTunnels.AutoSize = true;
             ChkTunnels.Location = new Point(25, 334);
             ChkTunnels.Name = "ChkTunnels";
@@ -3637,13 +3637,13 @@ namespace MCDzienny.Gui
             tabPage4.Controls.Add(txtCheap);
             tabPage4.Controls.Add(txtRestartTime);
             tabPage4.Controls.Add(chkRestartTime);
-            tabPage4.Font = new Font("Calibri", 8.25f, 0, (GraphicsUnit)3, 0);
+            tabPage4.Font = new Font("Calibri", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
             tabPage4.Location = new Point(4, 22);
             tabPage4.Name = "tabPage4";
             tabPage4.Size = new Size(587, 387);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Misc";
-            chkRepeatMessages.Appearance = (Appearance)1;
+            chkRepeatMessages.Appearance = Appearance.Button;
             chkRepeatMessages.AutoSize = true;
             chkRepeatMessages.Location = new Point(435, 93);
             chkRepeatMessages.Name = "chkRepeatMessages";
@@ -3652,7 +3652,7 @@ namespace MCDzienny.Gui
             chkRepeatMessages.Text = "Repeat message blocks";
             chkRepeatMessages.UseVisualStyleBackColor = true;
             chkRepeatMessages.CheckedChanged += chkRepeatMessages_CheckedChanged;
-            chkForceCuboid.Appearance = (Appearance)1;
+            chkForceCuboid.Appearance = Appearance.Button;
             chkForceCuboid.AutoSize = true;
             chkForceCuboid.Location = new Point(13, 261);
             chkForceCuboid.Name = "chkForceCuboid";
@@ -3688,7 +3688,7 @@ namespace MCDzienny.Gui
             chkBanMessage.Text = "Custom ban message:";
             chkBanMessage.UseVisualStyleBackColor = true;
             chkBanMessage.CheckedChanged += chkBanMessage_CheckedChanged;
-            chkrankSuper.Appearance = (Appearance)1;
+            chkrankSuper.Appearance = Appearance.Button;
             chkrankSuper.AutoSize = true;
             chkrankSuper.Location = new Point(368, 347);
             chkrankSuper.Name = "chkrankSuper";
@@ -3707,7 +3707,7 @@ namespace MCDzienny.Gui
             toolTip.SetToolTip(chkCheap, "Is immortality cheap and unfair?");
             chkCheap.UseVisualStyleBackColor = true;
             chkCheap.CheckedChanged += chkCheap_CheckedChanged;
-            chkDeath.Appearance = (Appearance)1;
+            chkDeath.Appearance = Appearance.Button;
             chkDeath.AutoSize = true;
             chkDeath.Location = new Point(13, 318);
             chkDeath.Name = "chkDeath";
@@ -3717,7 +3717,7 @@ namespace MCDzienny.Gui
             toolTip.SetToolTip(chkDeath, "\"Bob has died 10 times.\"");
             chkDeath.UseVisualStyleBackColor = true;
             chkDeath.CheckedChanged += chkDeath_CheckedChanged;
-            chk17Dollar.Appearance = (Appearance)1;
+            chk17Dollar.Appearance = Appearance.Button;
             chk17Dollar.AutoSize = true;
             chk17Dollar.Location = new Point(472, 318);
             chk17Dollar.Name = "chk17Dollar";
@@ -3726,7 +3726,7 @@ namespace MCDzienny.Gui
             chk17Dollar.Text = "$ before $name";
             chk17Dollar.UseVisualStyleBackColor = true;
             chk17Dollar.CheckedChanged += chk17Dollar_CheckedChanged;
-            chkPhysicsRest.Appearance = (Appearance)1;
+            chkPhysicsRest.Appearance = Appearance.Button;
             chkPhysicsRest.AutoSize = true;
             chkPhysicsRest.Location = new Point(13, 289);
             chkPhysicsRest.Name = "chkPhysicsRest";
@@ -3736,7 +3736,7 @@ namespace MCDzienny.Gui
             toolTip.SetToolTip(chkPhysicsRest, "Restart physics on shutdown, clearing all physics blocks.");
             chkPhysicsRest.UseVisualStyleBackColor = true;
             chkPhysicsRest.CheckedChanged += chkPhysicsRest_CheckedChanged_1;
-            chkSmile.Appearance = (Appearance)1;
+            chkSmile.Appearance = Appearance.Button;
             chkSmile.AutoSize = true;
             chkSmile.Location = new Point(481, 289);
             chkSmile.Name = "chkSmile";
@@ -3745,7 +3745,7 @@ namespace MCDzienny.Gui
             chkSmile.Text = "Parse emotes";
             chkSmile.UseVisualStyleBackColor = true;
             chkSmile.CheckedChanged += chkSmile_CheckedChanged;
-            chkHelp.Appearance = (Appearance)1;
+            chkHelp.Appearance = Appearance.Button;
             chkHelp.AutoSize = true;
             chkHelp.Location = new Point(13, 347);
             chkHelp.Name = "chkHelp";
@@ -3982,8 +3982,8 @@ namespace MCDzienny.Gui
             misc3.Size = new Size(587, 387);
             misc3.TabIndex = 8;
             misc3.Text = "Misc 3";
-            generalProperties.Dock = (DockStyle)5;
-            generalProperties.Font = new Font("Calibri", 8.25f, 0, (GraphicsUnit)3, 238);
+            generalProperties.Dock = DockStyle.Fill;
+            generalProperties.Font = new Font("Calibri", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 238);
             generalProperties.Location = new Point(3, 3);
             generalProperties.Name = "generalProperties";
             generalSettings.AllowAndListOnClassiCube = true;
@@ -4062,7 +4062,7 @@ namespace MCDzienny.Gui
             label90.Size = new Size(18, 13);
             label90.TabIndex = 29;
             label90.Text = "(?)";
-            label90.TextAlign = (ContentAlignment)64;
+            label90.TextAlign = ContentAlignment.MiddleRight;
             toolTip.SetToolTip(label90, "The number of big maps that can be created by a player with this rank with a command '/mymap'.");
             label89.AutoSize = true;
             label89.Cursor = Cursors.Help;
@@ -4071,7 +4071,7 @@ namespace MCDzienny.Gui
             label89.Size = new Size(18, 13);
             label89.TabIndex = 28;
             label89.Text = "(?)";
-            label89.TextAlign = (ContentAlignment)64;
+            label89.TextAlign = ContentAlignment.MiddleRight;
             toolTip.SetToolTip(label89, "The number of medium maps that can be created by a player with this rank with a command '/mymap'.");
             label88.AutoSize = true;
             label88.Cursor = Cursors.Help;
@@ -4080,32 +4080,32 @@ namespace MCDzienny.Gui
             label88.Size = new Size(18, 13);
             label88.TabIndex = 27;
             label88.Text = "(?)";
-            label88.TextAlign = (ContentAlignment)64;
+            label88.TextAlign = ContentAlignment.MiddleRight;
             toolTip.SetToolTip(label88, "The number of small maps that can be created by a player with this rank with a command '/mymap'.");
             label87.AutoSize = true;
-            label87.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 0);
+            label87.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 0);
             label87.Location = new Point(88, 206);
             label87.Name = "label87";
             label87.Size = new Size(34, 14);
             label87.TabIndex = 26;
             label87.Text = "Shop";
-            label87.TextAlign = (ContentAlignment)64;
+            label87.TextAlign = ContentAlignment.MiddleRight;
             label86.AutoSize = true;
-            label86.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 0);
+            label86.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 0);
             label86.Location = new Point(87, 18);
             label86.Name = "label86";
             label86.Size = new Size(36, 14);
             label86.TabIndex = 25;
             label86.Text = "Basic";
-            label86.TextAlign = (ContentAlignment)64;
+            label86.TextAlign = ContentAlignment.MiddleRight;
             label85.AutoSize = true;
-            label85.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 0);
+            label85.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 0);
             label85.Location = new Point(83, 268);
             label85.Name = "label85";
             label85.Size = new Size(55, 14);
             label85.TabIndex = 24;
             label85.Text = "My Maps";
-            label85.TextAlign = (ContentAlignment)64;
+            label85.TextAlign = ContentAlignment.MiddleRight;
             textBoxBigMaps.Location = new Point(99, 343);
             textBoxBigMaps.Name = "textBoxBigMaps";
             textBoxBigMaps.Size = new Size(100, 21);
@@ -4130,21 +4130,21 @@ namespace MCDzienny.Gui
             label84.Size = new Size(52, 13);
             label84.TabIndex = 20;
             label84.Text = "Big Maps:";
-            label84.TextAlign = (ContentAlignment)64;
+            label84.TextAlign = ContentAlignment.MiddleRight;
             label83.AutoSize = true;
             label83.Location = new Point(15, 319);
             label83.Name = "label83";
             label83.Size = new Size(77, 13);
             label83.TabIndex = 19;
             label83.Text = "Medium Maps:";
-            label83.TextAlign = (ContentAlignment)64;
+            label83.TextAlign = ContentAlignment.MiddleRight;
             label81.AutoSize = true;
             label81.Location = new Point(28, 292);
             label81.Name = "label81";
             label81.Size = new Size(64, 13);
             label81.TabIndex = 18;
             label81.Text = "Small Maps:";
-            label81.TextAlign = (ContentAlignment)64;
+            label81.TextAlign = ContentAlignment.MiddleRight;
             label82.AutoSize = true;
             label82.Cursor = Cursors.Help;
             label82.Location = new Point(205, 230);
@@ -4152,7 +4152,7 @@ namespace MCDzienny.Gui
             label82.Size = new Size(18, 13);
             label82.TabIndex = 17;
             label82.Text = "(?)";
-            label82.TextAlign = (ContentAlignment)64;
+            label82.TextAlign = ContentAlignment.MiddleRight;
             toolTip.SetToolTip(
                 label82, "This field defines the price for of the promotion that is available in '/shop'. If the value is 0 then the rank won't be buyable.");
             label33.AutoSize = true;
@@ -4161,14 +4161,14 @@ namespace MCDzienny.Gui
             label33.Size = new Size(85, 13);
             label33.TabIndex = 15;
             label33.Text = "Promotion Price:";
-            label33.TextAlign = (ContentAlignment)64;
+            label33.TextAlign = ContentAlignment.MiddleRight;
             txtPromotionPrice.Location = new Point(99, 227);
             txtPromotionPrice.Name = "txtPromotionPrice";
             txtPromotionPrice.Size = new Size(100, 21);
             txtPromotionPrice.TabIndex = 14;
             txtPromotionPrice.TextChanged += textBox1_TextChanged;
             txtPromotionPrice.KeyPress += txtPromotionPrice_KeyPress;
-            cmbColor.DropDownStyle = (ComboBoxStyle)2;
+            cmbColor.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbColor.FormattingEnabled = true;
             cmbColor.Location = new Point(99, 121);
             cmbColor.Name = "cmbColor";
@@ -4192,7 +4192,7 @@ namespace MCDzienny.Gui
             label14.Size = new Size(54, 13);
             label14.TabIndex = 3;
             label14.Text = "Filename:";
-            label14.TextAlign = (ContentAlignment)64;
+            label14.TextAlign = ContentAlignment.MiddleRight;
             txtLimit.Location = new Point(99, 95);
             txtLimit.Name = "txtLimit";
             txtLimit.Size = new Size(100, 21);
@@ -4204,7 +4204,7 @@ namespace MCDzienny.Gui
             label13.Size = new Size(59, 13);
             label13.TabIndex = 3;
             label13.Text = "Block limit:";
-            label13.TextAlign = (ContentAlignment)64;
+            label13.TextAlign = ContentAlignment.MiddleRight;
             txtPermission.Location = new Point(99, 68);
             txtPermission.Name = "txtPermission";
             txtPermission.Size = new Size(100, 21);
@@ -4216,7 +4216,7 @@ namespace MCDzienny.Gui
             label12.Size = new Size(63, 13);
             label12.TabIndex = 3;
             label12.Text = "Permission:";
-            label12.TextAlign = (ContentAlignment)64;
+            label12.TextAlign = ContentAlignment.MiddleRight;
             txtRankName.Location = new Point(99, 41);
             txtRankName.Name = "txtRankName";
             txtRankName.Size = new Size(100, 21);
@@ -4228,7 +4228,7 @@ namespace MCDzienny.Gui
             label11.Size = new Size(38, 13);
             label11.TabIndex = 3;
             label11.Text = "Name:";
-            label11.TextAlign = (ContentAlignment)64;
+            label11.TextAlign = ContentAlignment.MiddleRight;
             button1.Location = new Point(311, 6);
             button1.Name = "button1";
             button1.Size = new Size(57, 23);
@@ -4328,7 +4328,7 @@ namespace MCDzienny.Gui
             txtCmdRanks.Multiline = true;
             txtCmdRanks.Name = "txtCmdRanks";
             txtCmdRanks.ReadOnly = true;
-            txtCmdRanks.ScrollBars = (ScrollBars)2;
+            txtCmdRanks.ScrollBars = ScrollBars.Vertical;
             txtCmdRanks.Size = new Size(194, 163);
             txtCmdRanks.TabIndex = 15;
             txtCmdDisallow.Location = new Point(208, 107);
@@ -4371,7 +4371,7 @@ namespace MCDzienny.Gui
             textBoxCmdWarning.Name = "textBoxCmdWarning";
             textBoxCmdWarning.Size = new Size(360, 21);
             textBoxCmdWarning.TabIndex = 30;
-            checkBoxCmdCooldown.Appearance = (Appearance)1;
+            checkBoxCmdCooldown.Appearance = Appearance.Button;
             checkBoxCmdCooldown.AutoSize = true;
             checkBoxCmdCooldown.Location = new Point(40, 48);
             checkBoxCmdCooldown.MinimumSize = new Size(120, 0);
@@ -4379,7 +4379,7 @@ namespace MCDzienny.Gui
             checkBoxCmdCooldown.Size = new Size(120, 23);
             checkBoxCmdCooldown.TabIndex = 23;
             checkBoxCmdCooldown.Text = "Commands Cooldown";
-            checkBoxCmdCooldown.TextAlign = (ContentAlignment)32;
+            checkBoxCmdCooldown.TextAlign = ContentAlignment.MiddleCenter;
             checkBoxCmdCooldown.UseVisualStyleBackColor = true;
             label77.AutoSize = true;
             label77.Location = new Point(393, 53);
@@ -4508,7 +4508,7 @@ namespace MCDzienny.Gui
             label23.Size = new Size(51, 13);
             label23.TabIndex = 3;
             label23.Text = "IRC color:";
-            chkIRC.Appearance = (Appearance)1;
+            chkIRC.Appearance = Appearance.Button;
             chkIRC.AutoSize = true;
             chkIRC.Location = new Point(106, 59);
             chkIRC.Name = "chkIRC";
@@ -4519,7 +4519,7 @@ namespace MCDzienny.Gui
                 chkIRC, "Whether to use the IRC bot or not.\nIRC stands for Internet Relay Chat and allows for communication with the server while outside Minecraft.");
             chkIRC.UseVisualStyleBackColor = true;
             chkIRC.CheckedChanged += chkIRC_CheckedChanged;
-            cmbIRCColour.DropDownStyle = (ComboBoxStyle)2;
+            cmbIRCColour.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbIRCColour.FormattingEnabled = true;
             cmbIRCColour.Location = new Point(213, 165);
             cmbIRCColour.Name = "cmbIRCColour";
@@ -4552,7 +4552,7 @@ namespace MCDzienny.Gui
             txtIRCServer.Size = new Size(261, 21);
             txtIRCServer.TabIndex = 0;
             toolTip.SetToolTip(txtIRCServer, "The IRC server to be used.\nDefault = irc.esper.net\nBetter choice = irc.foonetic.net");
-            chkUpdates.Appearance = (Appearance)1;
+            chkUpdates.Appearance = Appearance.Button;
             chkUpdates.AutoSize = true;
             chkUpdates.Location = new Point(379, 118);
             chkUpdates.Name = "chkUpdates";
@@ -4655,7 +4655,7 @@ namespace MCDzienny.Gui
             groupBox3.TabIndex = 18;
             groupBox3.TabStop = false;
             groupBox3.Text = "Main switches";
-            checkBoxRemoveCaps.Appearance = (Appearance)1;
+            checkBoxRemoveCaps.Appearance = Appearance.Button;
             checkBoxRemoveCaps.AutoSize = true;
             checkBoxRemoveCaps.Location = new Point(15, 67);
             checkBoxRemoveCaps.MinimumSize = new Size(120, 0);
@@ -4663,10 +4663,10 @@ namespace MCDzienny.Gui
             checkBoxRemoveCaps.Size = new Size(120, 23);
             checkBoxRemoveCaps.TabIndex = 2;
             checkBoxRemoveCaps.Text = "Remove Caps";
-            checkBoxRemoveCaps.TextAlign = (ContentAlignment)32;
+            checkBoxRemoveCaps.TextAlign = ContentAlignment.MiddleCenter;
             checkBoxRemoveCaps.UseVisualStyleBackColor = true;
             checkBoxRemoveCaps.CheckedChanged += checkBoxRemoveCaps_CheckedChanged;
-            checkBoxShortenRepetitions.Appearance = (Appearance)1;
+            checkBoxShortenRepetitions.Appearance = Appearance.Button;
             checkBoxShortenRepetitions.AutoSize = true;
             checkBoxShortenRepetitions.Location = new Point(15, 106);
             checkBoxShortenRepetitions.MinimumSize = new Size(120, 0);
@@ -4674,10 +4674,10 @@ namespace MCDzienny.Gui
             checkBoxShortenRepetitions.Size = new Size(120, 23);
             checkBoxShortenRepetitions.TabIndex = 3;
             checkBoxShortenRepetitions.Text = "Shorten Repetitions";
-            checkBoxShortenRepetitions.TextAlign = (ContentAlignment)32;
+            checkBoxShortenRepetitions.TextAlign = ContentAlignment.MiddleCenter;
             checkBoxShortenRepetitions.UseVisualStyleBackColor = true;
             checkBoxShortenRepetitions.CheckedChanged += checkBoxShortenRepetitions_CheckedChanged;
-            checkBoxRemoveBadWords.Appearance = (Appearance)1;
+            checkBoxRemoveBadWords.Appearance = Appearance.Button;
             checkBoxRemoveBadWords.AutoSize = true;
             checkBoxRemoveBadWords.Location = new Point(15, 28);
             checkBoxRemoveBadWords.MinimumSize = new Size(120, 0);
@@ -4685,10 +4685,10 @@ namespace MCDzienny.Gui
             checkBoxRemoveBadWords.Size = new Size(120, 23);
             checkBoxRemoveBadWords.TabIndex = 4;
             checkBoxRemoveBadWords.Text = "Remove Bad Words";
-            checkBoxRemoveBadWords.TextAlign = (ContentAlignment)32;
+            checkBoxRemoveBadWords.TextAlign = ContentAlignment.MiddleCenter;
             checkBoxRemoveBadWords.UseVisualStyleBackColor = true;
             checkBoxRemoveBadWords.CheckedChanged += checkBoxRemoveBadWords_CheckedChanged;
-            checkBoxMessagesCooldown.Appearance = (Appearance)1;
+            checkBoxMessagesCooldown.Appearance = Appearance.Button;
             checkBoxMessagesCooldown.AutoSize = true;
             checkBoxMessagesCooldown.Location = new Point(15, 146);
             checkBoxMessagesCooldown.MinimumSize = new Size(120, 0);
@@ -4696,7 +4696,7 @@ namespace MCDzienny.Gui
             checkBoxMessagesCooldown.Size = new Size(120, 23);
             checkBoxMessagesCooldown.TabIndex = 5;
             checkBoxMessagesCooldown.Text = "Messages Cooldown";
-            checkBoxMessagesCooldown.TextAlign = (ContentAlignment)32;
+            checkBoxMessagesCooldown.TextAlign = ContentAlignment.MiddleCenter;
             checkBoxMessagesCooldown.UseVisualStyleBackColor = true;
             checkBoxMessagesCooldown.CheckedChanged += checkBoxMessagesCooldown_CheckedChanged;
             button3.Location = new Point(341, 49);
@@ -4828,7 +4828,7 @@ namespace MCDzienny.Gui
             button6.Text = "Edit Bad Words";
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
-            checkBoxRemoveBadWords1.Appearance = (Appearance)1;
+            checkBoxRemoveBadWords1.Appearance = Appearance.Button;
             checkBoxRemoveBadWords1.AutoSize = true;
             checkBoxRemoveBadWords1.Location = new Point(30, 22);
             checkBoxRemoveBadWords1.MinimumSize = new Size(120, 0);
@@ -4836,7 +4836,7 @@ namespace MCDzienny.Gui
             checkBoxRemoveBadWords1.Size = new Size(120, 23);
             checkBoxRemoveBadWords1.TabIndex = 3;
             checkBoxRemoveBadWords1.Text = "Remove Bad Words";
-            checkBoxRemoveBadWords1.TextAlign = (ContentAlignment)32;
+            checkBoxRemoveBadWords1.TextAlign = ContentAlignment.MiddleCenter;
             checkBoxRemoveBadWords1.UseVisualStyleBackColor = true;
             checkBoxRemoveBadWords1.CheckedChanged += checkBoxRemoveBadWords1_CheckedChanged;
             label53.AutoSize = true;
@@ -4891,7 +4891,7 @@ namespace MCDzienny.Gui
             label43.Size = new Size(55, 13);
             label43.TabIndex = 7;
             label43.Text = "Max Caps:";
-            checkBoxRemoveCaps1.Appearance = (Appearance)1;
+            checkBoxRemoveCaps1.Appearance = Appearance.Button;
             checkBoxRemoveCaps1.AutoSize = true;
             checkBoxRemoveCaps1.Location = new Point(17, 22);
             checkBoxRemoveCaps1.MinimumSize = new Size(120, 0);
@@ -4899,7 +4899,7 @@ namespace MCDzienny.Gui
             checkBoxRemoveCaps1.Size = new Size(120, 23);
             checkBoxRemoveCaps1.TabIndex = 1;
             checkBoxRemoveCaps1.Text = "Remove Caps";
-            checkBoxRemoveCaps1.TextAlign = (ContentAlignment)32;
+            checkBoxRemoveCaps1.TextAlign = ContentAlignment.MiddleCenter;
             checkBoxRemoveCaps1.UseVisualStyleBackColor = true;
             checkBoxRemoveCaps1.CheckedChanged += checkBoxRemoveCaps1_CheckedChanged;
             tabPageChatCharSpam.BackColor = SystemColors.Control;
@@ -4988,7 +4988,7 @@ namespace MCDzienny.Gui
             label52.Size = new Size(66, 13);
             label52.TabIndex = 9;
             label52.Text = "Substitution:";
-            checkBoxShortenRepetitions1.Appearance = (Appearance)1;
+            checkBoxShortenRepetitions1.Appearance = Appearance.Button;
             checkBoxShortenRepetitions1.AutoSize = true;
             checkBoxShortenRepetitions1.Location = new Point(19, 22);
             checkBoxShortenRepetitions1.MinimumSize = new Size(120, 0);
@@ -4996,7 +4996,7 @@ namespace MCDzienny.Gui
             checkBoxShortenRepetitions1.Size = new Size(120, 23);
             checkBoxShortenRepetitions1.TabIndex = 2;
             checkBoxShortenRepetitions1.Text = "Shorten Repetitions";
-            checkBoxShortenRepetitions1.TextAlign = (ContentAlignment)32;
+            checkBoxShortenRepetitions1.TextAlign = ContentAlignment.MiddleCenter;
             checkBoxShortenRepetitions1.UseVisualStyleBackColor = true;
             checkBoxShortenRepetitions1.CheckedChanged += checkBoxShortenRepetitions1_CheckedChanged;
             label51.AutoSize = true;
@@ -5106,7 +5106,7 @@ namespace MCDzienny.Gui
             label60.TabIndex = 23;
             label60.Text = "in";
             label60.Visible = false;
-            checkBoxMessagesCooldown1.Appearance = (Appearance)1;
+            checkBoxMessagesCooldown1.Appearance = Appearance.Button;
             checkBoxMessagesCooldown1.AutoSize = true;
             checkBoxMessagesCooldown1.Location = new Point(22, 24);
             checkBoxMessagesCooldown1.MinimumSize = new Size(120, 0);
@@ -5114,7 +5114,7 @@ namespace MCDzienny.Gui
             checkBoxMessagesCooldown1.Size = new Size(120, 23);
             checkBoxMessagesCooldown1.TabIndex = 4;
             checkBoxMessagesCooldown1.Text = "Messages Cooldown";
-            checkBoxMessagesCooldown1.TextAlign = (ContentAlignment)32;
+            checkBoxMessagesCooldown1.TextAlign = ContentAlignment.MiddleCenter;
             checkBoxMessagesCooldown1.UseVisualStyleBackColor = true;
             checkBoxMessagesCooldown1.CheckedChanged += checkBoxMessagesCooldown1_CheckedChanged;
             label59.AutoSize = true;
@@ -5156,7 +5156,7 @@ namespace MCDzienny.Gui
             textBoxDuplicateMessages.Size = new Size(32, 21);
             textBoxDuplicateMessages.TabIndex = 19;
             textBoxDuplicateMessages.Visible = false;
-            btnSave.Font = new Font("Calibri", 8.25f, 0, (GraphicsUnit)3, 0);
+            btnSave.Font = new Font("Calibri", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSave.Location = new Point(443, 426);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(75, 23);
@@ -5164,7 +5164,7 @@ namespace MCDzienny.Gui
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
             btnSave.Click += btnSave_Click;
-            btnDiscard.Font = new Font("Calibri", 8.25f, 0, (GraphicsUnit)3, 0);
+            btnDiscard.Font = new Font("Calibri", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnDiscard.Location = new Point(522, 426);
             btnDiscard.Name = "btnDiscard";
             btnDiscard.Size = new Size(75, 23);
@@ -5172,7 +5172,7 @@ namespace MCDzienny.Gui
             btnDiscard.Text = "Discard";
             btnDiscard.UseVisualStyleBackColor = true;
             btnDiscard.Click += btnDiscard_Click;
-            btnApply.Font = new Font("Calibri", 8.25f, 0, (GraphicsUnit)3, 0);
+            btnApply.Font = new Font("Calibri", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnApply.Location = new Point(362, 426);
             btnApply.Name = "btnApply";
             btnApply.Size = new Size(75, 23);
@@ -5184,10 +5184,10 @@ namespace MCDzienny.Gui
             toolTip.InitialDelay = 500;
             toolTip.IsBalloon = true;
             toolTip.ReshowDelay = 100;
-            toolTip.ToolTipIcon = (ToolTipIcon)1;
+            toolTip.ToolTipIcon = ToolTipIcon.Info;
             toolTip.ToolTipTitle = "Information";
             toolTip.Popup += toolTip_Popup;
-            tabControl1.Appearance = (TabAppearance)1;
+            tabControl1.Appearance = TabAppearance.Buttons;
             tabControl1.Controls.Add(tabPage8);
             tabControl1.Controls.Add(tabPage9);
             tabControl1.Controls.Add(tabPage10);
@@ -5219,7 +5219,7 @@ namespace MCDzienny.Gui
             tabPage9.UseVisualStyleBackColor = true;
             tabControl2.Controls.Add(tabPage11);
             tabControl2.Controls.Add(tabPage13);
-            tabControl2.Dock = (DockStyle)5;
+            tabControl2.Dock = DockStyle.Fill;
             tabControl2.Location = new Point(3, 3);
             tabControl2.Name = "tabControl2";
             tabControl2.SelectedIndex = 0;
@@ -5335,7 +5335,7 @@ namespace MCDzienny.Gui
             tabPage13.TabIndex = 1;
             tabPage13.Text = "Settings II";
             tabPage13.Visible = false;
-            lavaPropertyGrid.Dock = (DockStyle)5;
+            lavaPropertyGrid.Dock = DockStyle.Fill;
             lavaPropertyGrid.Location = new Point(3, 3);
             lavaPropertyGrid.Name = "lavaPropertyGrid";
             lavaSettings.AllowCuboidOnLavaMaps = false;
@@ -5387,7 +5387,7 @@ namespace MCDzienny.Gui
             tabPage10.TabIndex = 2;
             tabPage10.Text = "Zombie";
             tabPage10.UseVisualStyleBackColor = true;
-            zombiePropertyGrid.Dock = (DockStyle)5;
+            zombiePropertyGrid.Dock = DockStyle.Fill;
             zombiePropertyGrid.Location = new Point(3, 3);
             zombiePropertyGrid.Name = "zombiePropertyGrid";
             infectionSettings.BlockGlitchPrevention = true;
@@ -5417,11 +5417,11 @@ namespace MCDzienny.Gui
             zombiePropertyGrid.Size = new Size(601, 454);
             zombiePropertyGrid.TabIndex = 0;
             AutoScaleDimensions = new SizeF(6f, 13f);
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(638, 503);
             Controls.Add(tabControl1);
-            Font = new Font("Calibri", 8.25f, 0, (GraphicsUnit)3, 0);
-            FormBorderStyle = (FormBorderStyle)3;
+            Font = new Font("Calibri", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "PropertyWindow";

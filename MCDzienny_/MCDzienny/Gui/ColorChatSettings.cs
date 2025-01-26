@@ -305,7 +305,7 @@ namespace MCDzienny.Gui
             button1 = new Button();
             button2 = new Button();
             SuspendLayout();
-            chatFontCombobox.DropDownStyle = (ComboBoxStyle)2;
+            chatFontCombobox.DropDownStyle = ComboBoxStyle.DropDownList;
             chatFontCombobox.FormattingEnabled = true;
             chatFontCombobox.Location = new Point(21, 38);
             chatFontCombobox.Name = "chatFontCombobox";
@@ -394,7 +394,7 @@ namespace MCDzienny.Gui
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             AutoScaleDimensions = new SizeF(6f, 13f);
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(292, 219);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -410,7 +410,7 @@ namespace MCDzienny.Gui
             Controls.Add(radioButton1);
             Controls.Add(chatFontSizeCombo);
             Controls.Add(chatFontCombobox);
-            FormBorderStyle = (FormBorderStyle)3;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "ColorChatSettings";

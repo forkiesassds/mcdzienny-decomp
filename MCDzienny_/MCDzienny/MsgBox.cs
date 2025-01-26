@@ -38,7 +38,7 @@ namespace MCDzienny
         {
             //IL_000f: Unknown result type (might be due to invalid IL or missing references)
             MsgBox msgBox = new MsgBox(isOpen);
-            msgBox.StartPosition = (FormStartPosition)1;
+            msgBox.StartPosition = FormStartPosition.CenterScreen;
             msgBox.ShowDialog();
         }
 
@@ -60,7 +60,7 @@ namespace MCDzienny
         void InitializeComponent()
         {
             components = new Container();
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             Text = "MsgBox";
         }
     }

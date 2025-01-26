@@ -81,14 +81,14 @@ namespace MCDzienny.Gui
             buttonSave = new Button();
             label1 = new Label();
             SuspendLayout();
-            textBoxWhiteWords.Anchor = (AnchorStyles)15;
+            textBoxWhiteWords.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBoxWhiteWords.Location = new Point(12, 47);
             textBoxWhiteWords.Multiline = true;
             textBoxWhiteWords.Name = "textBoxWhiteWords";
-            textBoxWhiteWords.ScrollBars = (ScrollBars)2;
+            textBoxWhiteWords.ScrollBars = ScrollBars.Vertical;
             textBoxWhiteWords.Size = new Size(280, 302);
             textBoxWhiteWords.TabIndex = 0;
-            buttonSave.Anchor = (AnchorStyles)2;
+            buttonSave.Anchor = AnchorStyles.Bottom;
             buttonSave.Location = new Point(115, 355);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(75, 23);
@@ -104,7 +104,7 @@ namespace MCDzienny.Gui
             label1.TabIndex = 2;
             label1.Text = "The white list applies only for the High detection level. The words on this list are skipped by the bad words filter.";
             AutoScaleDimensions = new SizeF(6f, 13f);
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(305, 383);
             Controls.Add(label1);
             Controls.Add(buttonSave);

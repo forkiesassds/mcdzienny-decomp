@@ -81,14 +81,14 @@ namespace MCDzienny.Gui
             buttonSave = new Button();
             label1 = new Label();
             SuspendLayout();
-            textBoxBadWords.Anchor = (AnchorStyles)15;
+            textBoxBadWords.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBoxBadWords.Location = new Point(12, 32);
             textBoxBadWords.Multiline = true;
             textBoxBadWords.Name = "textBoxBadWords";
-            textBoxBadWords.ScrollBars = (ScrollBars)2;
+            textBoxBadWords.ScrollBars = ScrollBars.Vertical;
             textBoxBadWords.Size = new Size(280, 317);
             textBoxBadWords.TabIndex = 0;
-            buttonSave.Anchor = (AnchorStyles)2;
+            buttonSave.Anchor = AnchorStyles.Bottom;
             buttonSave.Location = new Point(115, 355);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(75, 23);
@@ -103,7 +103,7 @@ namespace MCDzienny.Gui
             label1.TabIndex = 2;
             label1.Text = "Each bad word should be in a separate line.";
             AutoScaleDimensions = new SizeF(6f, 13f);
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(305, 383);
             Controls.Add(label1);
             Controls.Add(buttonSave);

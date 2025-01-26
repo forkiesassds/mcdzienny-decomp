@@ -37,7 +37,7 @@ namespace MCDzienny.Misc
             //IL_0032: Unknown result type (might be due to invalid IL or missing references)
             PortIsOpen portIsOpen = new PortIsOpen();
             portIsOpen.label1.Text = "Port " + Server.port + " is open. It means that other people can connect to your server.";
-            portIsOpen.StartPosition = (FormStartPosition)1;
+            portIsOpen.StartPosition = FormStartPosition.CenterScreen;
             portIsOpen.ShowDialog();
         }
 
@@ -87,11 +87,11 @@ namespace MCDzienny.Misc
             pictureBox1.MinimumSize = new Size(100, 100);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(100, 100);
-            pictureBox1.SizeMode = (PictureBoxSizeMode)1;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 12f, (FontStyle)1, (GraphicsUnit)3, 238);
+            label1.Font = new Font("Microsoft Sans Serif", 12f, FontStyle.Bold, GraphicsUnit.Point, 238);
             label1.Location = new Point(22, 76);
             label1.MaximumSize = new Size(250, 0);
             label1.Name = "label1";
@@ -106,7 +106,7 @@ namespace MCDzienny.Misc
             okButton.UseVisualStyleBackColor = true;
             okButton.Click += okButton_Click;
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 12f, (FontStyle)1, (GraphicsUnit)3, 238);
+            label2.Font = new Font("Microsoft Sans Serif", 12f, FontStyle.Bold, GraphicsUnit.Point, 238);
             label2.Location = new Point(22, 36);
             label2.Name = "label2";
             label2.Size = new Size(82, 20);
@@ -120,7 +120,7 @@ namespace MCDzienny.Misc
             checkBox1.Text = "Don't show this message again.";
             checkBox1.UseVisualStyleBackColor = true;
             AutoScaleDimensions = new SizeF(6f, 13f);
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(488, 252);
             Controls.Add(checkBox1);
             Controls.Add(label2);

@@ -156,19 +156,19 @@ namespace MCDzienny.Gui
             btnCreate = new Button();
             btnCancel = new Button();
             SuspendLayout();
-            mapName.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            mapName.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             mapName.Location = new Point(79, 24);
             mapName.Name = "mapName";
             mapName.Size = new Size(137, 22);
             mapName.TabIndex = 0;
             label1.AutoSize = true;
-            label1.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            label1.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             label1.Location = new Point(28, 27);
             label1.Name = "label1";
             label1.Size = new Size(39, 14);
             label1.TabIndex = 1;
             label1.Text = "Name";
-            mapX.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            mapX.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             mapX.FormattingEnabled = true;
             mapX.Items.AddRange(new object[7]
             {
@@ -180,34 +180,34 @@ namespace MCDzienny.Gui
             mapX.TabIndex = 2;
             mapX.SelectedIndex = 3;
             label2.AutoSize = true;
-            label2.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            label2.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             label2.Location = new Point(43, 74);
             label2.Name = "label2";
             label2.Size = new Size(73, 14);
             label2.TabIndex = 3;
             label2.Text = "Dimensions";
             label3.AutoSize = true;
-            label3.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            label3.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             label3.Location = new Point(11, 103);
             label3.Name = "label3";
             label3.Size = new Size(56, 14);
             label3.TabIndex = 4;
             label3.Text = "Width [x]";
             label4.AutoSize = true;
-            label4.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            label4.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             label4.Location = new Point(8, 131);
             label4.Name = "label4";
             label4.Size = new Size(59, 14);
             label4.TabIndex = 5;
             label4.Text = "Height [y]";
             label5.AutoSize = true;
-            label5.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            label5.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             label5.Location = new Point(10, 158);
             label5.Name = "label5";
             label5.Size = new Size(56, 14);
             label5.TabIndex = 6;
             label5.Text = "Depth [z]";
-            mapY.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            mapY.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             mapY.FormattingEnabled = true;
             mapY.Items.AddRange(new object[7]
             {
@@ -218,7 +218,7 @@ namespace MCDzienny.Gui
             mapY.Size = new Size(76, 22);
             mapY.TabIndex = 7;
             mapY.SelectedIndex = 2;
-            mapZ.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            mapZ.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             mapZ.FormattingEnabled = true;
             mapZ.Items.AddRange(new object[7]
             {
@@ -230,14 +230,14 @@ namespace MCDzienny.Gui
             mapZ.TabIndex = 8;
             mapZ.SelectedIndex = 3;
             label6.AutoSize = true;
-            label6.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            label6.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             label6.Location = new Point(180, 74);
             label6.Name = "label6";
             label6.Size = new Size(62, 14);
             label6.TabIndex = 9;
             label6.Text = "Generator";
-            mapGenerator.DropDownStyle = (ComboBoxStyle)2;
-            mapGenerator.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            mapGenerator.DropDownStyle = ComboBoxStyle.DropDownList;
+            mapGenerator.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             mapGenerator.FormattingEnabled = true;
             mapGenerator.Items.AddRange(new object[7]
             {
@@ -249,14 +249,14 @@ namespace MCDzienny.Gui
             mapGenerator.TabIndex = 10;
             mapGenerator.SelectedIndex = 0;
             label7.AutoSize = true;
-            label7.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            label7.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             label7.Location = new Point(199, 131);
             label7.Name = "label7";
             label7.Size = new Size(32, 14);
             label7.TabIndex = 11;
             label7.Text = "Type";
-            mapType.DropDownStyle = (ComboBoxStyle)2;
-            mapType.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            mapType.DropDownStyle = ComboBoxStyle.DropDownList;
+            mapType.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             mapType.FormattingEnabled = true;
             mapType.Items.AddRange(new object[1]
             {
@@ -267,7 +267,7 @@ namespace MCDzienny.Gui
             mapType.Size = new Size(97, 22);
             mapType.TabIndex = 12;
             mapType.SelectedIndex = 0;
-            btnCreate.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            btnCreate.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             btnCreate.Location = new Point(62, 234);
             btnCreate.Name = "btnCreate";
             btnCreate.Size = new Size(75, 23);
@@ -275,7 +275,7 @@ namespace MCDzienny.Gui
             btnCreate.Text = "Create";
             btnCreate.UseVisualStyleBackColor = true;
             btnCreate.Click += btnCreate_Click;
-            btnCancel.Font = new Font("Calibri", 9f, 0, (GraphicsUnit)3, 238);
+            btnCancel.Font = new Font("Calibri", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
             btnCancel.Location = new Point(156, 234);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
@@ -284,7 +284,7 @@ namespace MCDzienny.Gui
             btnCancel.UseVisualStyleBackColor = true;
             btnCancel.Click += btnCancel_Click;
             AutoScaleDimensions = new SizeF(6f, 13f);
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(292, 269);
             Controls.Add(btnCancel);
             Controls.Add(btnCreate);

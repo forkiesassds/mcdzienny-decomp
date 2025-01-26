@@ -49,14 +49,14 @@ namespace MCDzienny
             buttonAddPlugin = new Button();
             listBoxPlugins = new ListBox();
             SuspendLayout();
-            label1.Anchor = (AnchorStyles)1;
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Location = new Point(165, 12);
             label1.Name = "label1";
             label1.Size = new Size(153, 13);
             label1.TabIndex = 3;
             label1.Text = "Select a plugin for the removal:";
-            buttonAddPlugin.Anchor = (AnchorStyles)2;
+            buttonAddPlugin.Anchor = AnchorStyles.Bottom;
             buttonAddPlugin.Location = new Point(166, 342);
             buttonAddPlugin.Name = "buttonAddPlugin";
             buttonAddPlugin.Size = new Size(150, 23);
@@ -64,7 +64,7 @@ namespace MCDzienny
             buttonAddPlugin.Text = "Remove Plugin";
             buttonAddPlugin.UseVisualStyleBackColor = true;
             buttonAddPlugin.Click += buttonRemovePlugin_Click;
-            listBoxPlugins.Anchor = (AnchorStyles)3;
+            listBoxPlugins.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             listBoxPlugins.FormattingEnabled = true;
             listBoxPlugins.Location = new Point(166, 33);
             listBoxPlugins.Name = "listBoxPlugins";

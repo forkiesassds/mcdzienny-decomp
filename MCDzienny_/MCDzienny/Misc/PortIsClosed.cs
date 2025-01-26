@@ -33,7 +33,7 @@ namespace MCDzienny.Misc
             PortIsClosed portIsClosed = new PortIsClosed();
             portIsClosed.label1.Text = "Port " + Server.port +
                 " is not accessible. No one can connect to your server from the internet. You have to port forward in order to let people join. For help visit: www.mcdzienny.cba.pl";
-            portIsClosed.StartPosition = (FormStartPosition)1;
+            portIsClosed.StartPosition = FormStartPosition.CenterScreen;
             portIsClosed.ShowDialog();
         }
 
@@ -71,11 +71,11 @@ namespace MCDzienny.Misc
             pictureBox1.MinimumSize = new Size(100, 100);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(100, 100);
-            pictureBox1.SizeMode = (PictureBoxSizeMode)1;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 12f, (FontStyle)1, (GraphicsUnit)3, 238);
+            label1.Font = new Font("Microsoft Sans Serif", 12f, FontStyle.Bold, GraphicsUnit.Point, 238);
             label1.Location = new Point(24, 35);
             label1.MaximumSize = new Size(250, 0);
             label1.Name = "label1";
@@ -91,7 +91,7 @@ namespace MCDzienny.Misc
             okButton.UseVisualStyleBackColor = true;
             okButton.Click += okButton_Click;
             AutoScaleDimensions = new SizeF(6f, 13f);
-            AutoScaleMode = (AutoScaleMode)1;
+            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(488, 224);
             Controls.Add(okButton);
             Controls.Add(label1);
